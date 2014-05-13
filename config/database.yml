@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  encoding: utf-8
+  database: chinkoproject
+  pool: 5
