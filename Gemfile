@@ -20,7 +20,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'bootstrap-sass'
-gem 'jquery-rails'
 gem 'haml'
 
 # Use jquery as the JavaScript library
