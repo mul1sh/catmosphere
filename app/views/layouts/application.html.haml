@@ -1,0 +1,33 @@
+!!!
+%html
+  :plain
+    <!--
+
+    Chinko Project Copyright (C) 2014  Constantin Hofstetter
+
+    The source code of this project can be found at:
+    https://github.com/consti/chinkoproject.com
+
+    The author can be reached at:
+    consti (AT) consti (DOT) de
+
+    -->
+  %head
+    %title Chinko Research
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+
+    .container#content
+      - if notice
+        = render partial: 'shared/notice', locals: { notice: notice }
+      - if alert
+        = render partial: 'shared/alert', locals: { alert: alert }
+      = yield
+
+      .row
+        .col-md-12.text-center
+          %p
+            %small
+              Chinko Project &copy; 2014. All rights reserved.
