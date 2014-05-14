@@ -237,28 +237,7 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
 
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 100px;
-    }
-
-    .people-section {
-        padding-top: 50px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
 
 .btn {
     text-transform: uppercase;
