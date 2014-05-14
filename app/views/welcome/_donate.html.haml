@@ -1,7 +1,34 @@
-%section#donate.container.content-section
-  .row
-    .col-lg-8.col-lg-offset-2
-      %h2.text-center Donate
-      %p The Chinko Project operates under very particular conditions in an area classified among the most remote on the African continent. We can only operate with support by passionate private partners, joining our path towards the fully functioning, sustainable nature management of the Chinko Project. Join us in this important endeavor now: please DONATE online or contact us for further details on donate@chinkoproject.com
+%section#donate
+  .donate-background
+    .container
+      .col-lg-8.col-lg-offset-2
+        %h2.text-center Donate
 
-      %p Want to stay tuned? Sign up for The Chinko Project Newsletter [here]. No worries, we don not have much spare time, so we will not get more than one message a month from us.
+        %p
+          \The Chinko Project operates under very particular conditions in an area
+          \classified among the most remote on the African continent.
+
+        %p
+          \We can only operate
+          \with support by passionate private partners, joining our path towards the fully
+          \functioning, sustainable nature management of the Chinko Project.
+        %p
+          \Join us in
+          \this important endeavor now: please donate online or contact us for further
+          \details on
+          = succeed '.' do
+            = link_to 'donate@chinkoproject.com', 'mailto:donate@chinkoproject.com'
+
+        %p
+          \Want to stay tuned? Sign up for The Chinko Project Newsletter. No
+          \worries, we don not have much spare time, so we will not get more than one
+          \message a month from us.
+
+        %p.text-center
+          %form#newsletter
+            .row
+              .col-lg-10.col-lg-offset-1
+                .input-group
+                  %input.form-control{type: "text", placeholder: 'Enter email address'}/
+                  %span.input-group-btn
+                    %button.btn.btn-default{type: "button"} Subscribe To Newsletter

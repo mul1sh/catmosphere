@@ -44,11 +44,11 @@
   list-style: none;
 }
 
-.area-section {
+.donate-background {
     width: 100%;
-    padding: 50px 0;
+    padding: 150px 0 50px 0;
     color: #fff;
-    background: asset-url('downloads-bg.jpg') no-repeat center center scroll;
+    background: asset-url('donate/before-the-storm.jpg') no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,4 +79,23 @@
   color: #DDD;
   padding: 5px 10px;
   background: rgba(0,0,0,0.5);
+}
+
+.form-control {
+    border: 1px solid #28c3ab;
+    background-color: transparent;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border: 1px solid #28c3ab;
+    outline: 0;
+}
+
+#newsletter button {
+  height: 40px;
+}
+
+#newsletter input {
+  height: 40px;
 }
