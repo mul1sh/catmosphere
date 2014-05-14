@@ -34,3 +34,28 @@
     background-size: cover;
     -o-background-size: cover;
 }
+
+.image {
+  position: relative;
+}
+
+.image .image-description {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+ -moz-transition: opacity .25s ease-in-out;
+ -webkit-transition: opacity .25s ease-in-out;
+}
+
+.image:hover .image-description {
+  opacity: 1;
+}
+
+.image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #DDD;
+  padding: 5px 10px;
+  background: rgba(0,0,0,0.5);
+}

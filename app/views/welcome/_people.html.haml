@@ -1,4 +1,4 @@
-%section#people.content-section
+%section#people.people-section
   .white-background
     .container
       .col-lg-8.col-lg-offset-2
@@ -20,14 +20,11 @@
           \the children a chance not possible until now.
 
         #people-carousel.owl-carousel
-          .img-owl
-            = image_tag('people/transhumant_herdsmen_family.jpg')
-          .img-owl
-            = image_tag('people/villager_of_bakouma_preparing_peanut_butter.jpg')
-          .img-owl
-            = image_tag('people/bakouma_school_children.jpg')
-          .img-owl
-            = image_tag('people/emelie_teaching_a_class_in_bakouma.jpg')
+          - %w(transhumant-herdsmen-family villager-of-bakouma-preparing-peanut-butter bakouma-school-children emelie-teaching-a-class-in-bakouma).each do |name|
+            .image
+              = image_tag('people/'+ name +'.jpg')
+              .image-description
+                = name.titleize
 
         :javascript
           $(document).ready(function(){
