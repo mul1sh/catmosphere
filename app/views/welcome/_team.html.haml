@@ -3,34 +3,15 @@
     .col-lg-8.col-lg-offset-2
       %h2.text-center Team
 
-      %p
-        Management
-        David Simpson CEO, PRESIDENT
-        Raffael Hickisch VICE-PRESIDENT
-        Federico Lambert INTERIM SITE MANAGER CPA
-        Eric Ngamana SITE MANAGER BANGUI
-        New Park Manager Assistant CPA (wait for Ghisnain name and CV)
-        New Research Assistant CPA (wait for Guy name and CV)
-        Tobias Ruckstuhl INTERIM CFO
-        Emelie Mararv INTERIM MANAGER CONSTITUENCY BUILDING
-
-        Volutary Capacity
-        Constantin Hofstetter, INFORMATION TECHNOLOGIES
-        Loredana Hartmann, LAW
-        Milena Klimek, FUNDRAISING, SCIENTIFIC WRITING
-        Ryan Youngblood, FILM & PHOTOGRAPHY
-        Board
-        Jean Marc Fromment
-        New Member (def by APN)
-        New Member (def by APN)
-        New Chairman (def by APN)
-        Thierry Aebischer, Board Member
-        Erik Mararv, Board Member
-        David Zokoe, Board Member
-        Advisory Board
-        Jean Baptiste Mamang
-        Philipp Henschel
-        Louisa Lombard
-        Charlotte Mararv
-        Racey Bingham
-        John Michael Fay
+      - team.each do |group, members|
+        %h3= group.to_s.titleize
+        - members.each do |member|
+          .row
+            .col-lg-2
+              = image_tag('team/' + member[:image])
+            .col-lg-10
+              %h4
+                = member[:name]
+                %small
+                  = member[:title]
+              = simple_format member[:cv]
