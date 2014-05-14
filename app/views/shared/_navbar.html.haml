@@ -1,0 +1,42 @@
+%nav.navbar.navbar-custom.navbar-fixed-top{role: "navigation"}
+  .container
+    .navbar-header.page-scroll
+      %button.navbar-toggle{"data-target" => ".navbar-main-collapse", "data-toggle" => "collapse", type: "button"}
+        %i.fa.fa-bars
+      %a.navbar-brand{href: "#page-top"}
+        -#%i.fa.fa-play-circle
+        %span.light Chinko
+        project
+    / Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+      %ul.nav.navbar-nav
+        / Hidden li included to remove active class from about link when scrolled up past about section
+        %li.hidden
+          %a{href: "#page-top"}
+        %li.page-scroll
+          %a{href: "#introduction"} Introduction
+
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            Chinko
+            %b.caret
+          %ul.dropdown-menu
+            %li.page-scroll
+              %a{href: "#gallery"} Gallery
+            %li.page-scroll
+              %a{href: "#area"} Area
+            %li.page-scroll
+              %a{href: "#people"} People
+            %li.page-scroll
+              %a{href: "#wildlife"} Wildlife
+            %li.page-scroll
+              %a{href: "#threats"} Threats
+
+        %li.page-scroll
+          %a{href: "#team"} Team
+        %li.page-scroll
+          %a{href: "#donate"} Donate
+        %li.page-scroll
+          %a{href: "#contact"} Contact
+    / /.navbar-collapse
+  / /.container

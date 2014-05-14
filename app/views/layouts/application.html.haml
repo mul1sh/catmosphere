@@ -17,17 +17,17 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
-  %body
 
-    .container#content
-      - if notice
-        = render partial: 'shared/notice', locals: { notice: notice }
-      - if alert
-        = render partial: 'shared/alert', locals: { alert: alert }
-      = yield
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
 
-      .row
-        .col-md-12.text-center
-          %p
-            %small
-              Chinko Project &copy; 2014. All rights reserved.
+    / Fonts
+    %link{href: "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", rel: "stylesheet", type: "text/css"}/
+    %link{href: "http://fonts.googleapis.com/css?family=Montserrat:400,700", rel: "stylesheet", type: "text/css"}/
+
+  %body#page-top{"data-spy" => "scroll", "data-target" => ".navbar-custom"}
+    = render partial: 'shared/navbar'
+    = yield

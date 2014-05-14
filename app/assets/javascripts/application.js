@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery_easing
 //= require turbolinks
 //= require bootstrap
+//= require imagesloaded
+//= require grayscale
 //= require_tree .
