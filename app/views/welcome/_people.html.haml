@@ -1,5 +1,42 @@
-%section#people.container.content-section.text-center
-  .row
-    .col-lg-8.col-lg-offset-2
-      %h2 People
-      %p The Central African people—mostly smallholder farmers living in the villages sedentary to the CPA nature reserve and transhumant herdsmen trespassing the with their livestock to access the meat markets in Bangui—are among the poorest on the continent. Threatened by rebel groups for decades, and far away from the Central African capital, these communities are desperately looking for ways to sustain their livelihoods, and provide a better future for their children. The Chinko Project offers an income, and stability to many of these families as well as through the support of schooling programs, giving the children a chance not possible until now. 
+%section#people.content-section
+  .white-background
+    .container
+      .col-lg-8.col-lg-offset-2
+        %h2.text-center People
+        %p
+          \The Central African people — mostly smallholder farmers living in the
+          \villages sedentary to the CPA nature reserve and transhumant herdsmen
+          \trespassing with their livestock to access the meat markets in Bangui
+          \— are among the poorest on the continent.
+
+        %p
+          \Threatened by rebel groups for decades, and far away from the Central
+          \African capital, these communities are desperately looking for ways to
+          \sustain their livelihoods, and provide a better future for their children.
+
+        %p
+          \The Chinko Project offers an income, and stability to many of these
+          \families as well as through the support of schooling programs, giving
+          \the children a chance not possible until now.
+
+        #people-carousel.owl-carousel
+          .img-owl
+            = image_tag('people/transhumant_herdsmen_family.jpg')
+          .img-owl
+            = image_tag('people/villager_of_bakouma_preparing_peanut_butter.jpg')
+          .img-owl
+            = image_tag('people/bakouma_school_children.jpg')
+          .img-owl
+            = image_tag('people/emelie_teaching_a_class_in_bakouma.jpg')
+
+        :javascript
+          $(document).ready(function(){
+            $("#people-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                lazyLoad: true,
+                merge: true,
+                video: true
+              });
+          });

@@ -17,4 +17,5 @@
 //= require bootstrap
 //= require imagesloaded
 //= require grayscale
+//= require owlcarousel
 //= require_tree .
