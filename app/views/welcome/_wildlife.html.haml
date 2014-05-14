@@ -23,21 +23,22 @@
         = succeed '.' do
           = link_to "research platform", "http://research.chinkoproject.com", { target: '_blank' }
 
-      #wildlife-carousel.owl-carousel
-        - %w(oribi-in-savannah-opening warthog leopard-track leopard leopard-in-front-of-camera-trap hartebeest).each do |name|
-          .image
-            = image_tag('wildlife/'+ name +'.jpg')
-            .image-description
-              = name.titleize
+      %p
+        #wildlife-carousel.owl-carousel
+          - %w(oribi-in-savannah-opening warthog leopard-track leopard leopard-in-front-of-camera-trap hartebeest).each do |name|
+            .image
+              = image_tag('wildlife/'+ name +'.jpg')
+              .image-description
+                = name.titleize
 
-      :javascript
-        $(document).ready(function(){
-          $("#wildlife-carousel").owlCarousel({
-              items: 1,
-              loop: true,
-              margin: 10,
-              lazyLoad: true,
-              merge: true,
-              video: true
-            });
-        });
+        :javascript
+          $(document).ready(function(){
+            $("#wildlife-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                lazyLoad: true,
+                merge: true,
+                video: true
+              });
+          });
