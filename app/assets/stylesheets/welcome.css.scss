@@ -114,3 +114,24 @@ ol.actions li {
 .modal-dialog {
   color: #000;
 }
+
+.btn-white {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.btn-white:hover {
+  color: #000;
+  border-color: #FFF;
+  background-color: #FFF;
+}
+
+.btn-white .glyphicon {
+  font-size: 90%;
+}
+
+.shadowed {
+   color: rgba(255,255,255,0.7);
+  -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+  text-stroke: 1px rgba(0,0,0,0.5);
+}

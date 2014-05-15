@@ -18,4 +18,5 @@
 //= require imagesloaded
 //= require grayscale
 //= require owlcarousel
+//= require lightbox
 //= require_tree .
