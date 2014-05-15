@@ -5,21 +5,33 @@
         %h2.text-center Donate
 
         %p
-          \The Chinko Project operates under very particular conditions in an area
-          \classified among the most remote on the African continent.
+          As a young Non-Profit Organisation working in a challenging environment, support
+          is essential.
+        %p
+          We are very thankful by all financial and in-kind support by
+          organisations (namely
+          = succeed ',' do
+            = link_to 'USFWS', 'http://www.fws.gov/', target: '_blank'
+          = succeed ',' do
+            = link_to 'APN', '#' #, target: '_blank'
+          = succeed ',' do
+            = link_to "ANPN", "http://www.parcsgabon.org/l-anpn/l-agence", target: '_blank'
+          = succeed ', the' do
+            = link_to "BASEhabitat", "http://www.basehabitat.ufg.ac.at", target: '_blank'
+          = succeed ',' do
+            = link_to "University of Fribourg", "http://www.unifr.ch/", target: '_blank'
+          = succeed ', the' do
+            = link_to "Panthera", "http://www.panthera.org/", target: '_blank'
+          = succeed ' and' do
+            = link_to "Foundation for Wildlife Ecology Basel", '#' #, target: '_blank'
+          = succeed ')' do
+            = link_to "CAWA", "http://www.cawasafari.com/", target: '_blank'
+          and by the many passionate private supporters.
 
+        %p.text-center
+          %a.btn.btn-default.btn-lg{ href: 'mailto:donate@chinkoproject.com' }
+            Donate Now!
         %p
-          \We can only operate
-          \with support by passionate private partners, joining our path towards the fully
-          \functioning, sustainable nature management of the Chinko Project.
-        %p
-          \Join us in
-          \this important endeavor now: please donate online or contact us for further
-          \details on
+          or contact our
           = succeed '.' do
-            = link_to 'donate@chinkoproject.com', 'mailto:donate@chinkoproject.com'
-
-        %p
-          \Want to stay tuned? Sign up for The Chinko Project Newsletter. No
-          \worries, we don not have much spare time, so we will not get more than one
-          \message a month from us.
+            = link_to 'donor liaison team', 'mailto:donate@chinkoproject.com'
