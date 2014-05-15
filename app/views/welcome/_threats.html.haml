@@ -7,67 +7,94 @@
           \ &&nbsp;
           %span.label.label-success> Actions
         %p The Chinko Project Area's ecosystem is today facing two major pressures:
-        %ol
+        %ol.threats
           %li
             %p
-              Groups of hired, armed herdsmen from Sudan with cattle herds of more than
-              \1,000 each come into the CPA to graze the animals and thereby deplete the
-              \habitat and put stress on the wildlife. Additionally, some of these groups
-              \have discovered the economic benefit of poaching and trading dried Central
-              \African bushmeat on Sudanese markets (ie. Nyala)
+              %b Armed Sudanese Herdsmen
+              with cattle herds of more than 1,000 each come into the area for grazing -
+              depleting the habitat in the long term and putting immediate stress on the
+              wildlife.
+            %p
+              Some actively try to clean the area off predators that would put
+              their livestock in danger, while others have discovered the economic benefit
+              of poaching and drying bush meat to trade on Sudanese markets.
           %li
             %p
-              Professional Ivory poachers, usually comprised of Sudanese professionals and
-              \rebel groups, threatening the small herd of surviving forest elephants in
-              \the region.
-
-
-        #threat-carousel.owl-carousel
-          - %w(herdsmen-off-the-livestock-corridor remails-of-a-poached-waterbuck herdsmen).each do |name|
-            .image
-              = image_tag('threat/'+ name +'.jpg')
-              .image-description
-                = name.titleize
-
-        :javascript
-          $(document).ready(function(){
-            $("#threat-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                lazyLoad: true,
-                merge: true,
-                video: true
-              });
-          });
+              %b Ivory poachers
+              usually comprised of Sudanese professionals and rebel groups, threatening
+              the small herd of surviving forest elephants in the region.
 
 
         %p
-          \To solve the problem of grazing we seek to provide positive incentives for the
-          \herdsmen to pass through a designated livestock corridor as quickly as possible
-          \or encourage the option of avoiding the CPA altogether (ie. by providing
-          \shelters and waterholes outside its borders).
+          #threat-carousel.owl-carousel
+            - %w(herdsmen-off-the-livestock-corridor remails-of-a-poached-waterbuck herdsmen).each do |name|
+              .image
+                = image_tag('threat/'+ name +'.jpg')
+                .image-description
+                  = name.titleize
+
+          :javascript
+            $(document).ready(function(){
+              $("#threat-carousel").owlCarousel({
+                  items: 1,
+                  loop: true,
+                  margin: 10,
+                  lazyLoad: true,
+                  merge: true,
+                  video: true
+                });
+            });
+
+
+        %p To reduce that pressure, we take action:
+        %ol.actions
+          %li
+            %p
+              %b Conduct Research
+              to better understand the complexities and trade chains underlying bush meat
+              and ivory trade from Chinko to Sudan.
+
+          %li
+            %p
+              %b Provide Incentives
+              for the herdsmen to pass through a designated livestock corridor as quickly
+              as possible.
+          %li
+            %p
+              %b Inform
+              herdsmen about possibilities of protecting their livestock against
+              predators.
+          %li
+            %p
+              %b Build capacity
+              by training and deploying Central African park rangers, and supporting local
+              school programs to make people better understand the value of wildlife.
+          %li
+            %p
+              %b Monitor & Patrol
+              the area with advanced surveillance strategies.
+          %li
+            %p
+              %b Detect & disarm
+              poaching infringers inside the nature reserve and hand them over to the next
+              state authority.
 
         %p
-          Any poaching activity, however,
-          \must be dealt with by disarming poaching infringers inside the CPA and
-          \transporting them to the next state authority.
+          #action-carousel.owl-carousel
+            - %w(ghisnain-talking-on-educational-workshop-in-bakouma park-ranger-advising-herdsman-to-follow-livestock-cortridor).each do |name|
+              .image
+                = image_tag('action/'+ name +'.jpg')
+                .image-description
+                  = name.titleize
 
-        #action-carousel.owl-carousel
-          - %w(ghisnain-talking-on-educational-workshop-in-bakouma park-ranger-advising-herdsman-to-follow-livestock-cortridor).each do |name|
-            .image
-              = image_tag('action/'+ name +'.jpg')
-              .image-description
-                = name.titleize
-
-        :javascript
-          $(document).ready(function(){
-            $("#action-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                lazyLoad: true,
-                merge: true,
-                video: true
-              });
-          });
+          :javascript
+            $(document).ready(function(){
+              $("#action-carousel").owlCarousel({
+                  items: 1,
+                  loop: true,
+                  margin: 10,
+                  lazyLoad: true,
+                  merge: true,
+                  video: true
+                });
+            });

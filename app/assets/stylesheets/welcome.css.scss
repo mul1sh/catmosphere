@@ -38,11 +38,18 @@
 
 }
 
-#threats ol li {
+ol.threats li {
   border-left: 4px solid #d9534f;
   padding: 0 0 0 20px;
   list-style: none;
 }
+
+ol.actions li {
+  border-left: 4px solid #5cb85c;
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+
 
 .donate-background {
     width: 100%;
