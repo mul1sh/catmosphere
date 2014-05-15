@@ -194,7 +194,7 @@ HTML
           },
           {
             name: "Charlotte Mararv",
-            title: "",
+            title: "Advisor",
             email: nil,
             image: "charlotte-mararv.jpg",
             cv: <<-HTML
@@ -205,7 +205,7 @@ HTML
           },
           {
             name: "Racey Bingham",
-            title: "",
+            title: "Advisor",
             email: nil,
             image: "racey-bingham.jpg",
             cv: <<-HTML
