@@ -57,11 +57,3 @@
   padding-right: 15px;
   text-align: right;
 }
-
-.ekko-lightbox .modal-header {
-  display: none;
-}
-
-.ekko-lightbox .modal-footer {
-  text-align: left;
-}
