@@ -2,8 +2,8 @@
   #video_wrapper
     %video#ambient_video{autoplay: '', loop: '', muted: '', preload: 'auto', poster: image_path('hero/ambient.jpg') }
       %source{src: "http://vimeo.com/95474106/download?t=1400259250&v=254203230&s=3539f9260a0564b7828e0fe22db8e7bb"}
-      %source{src: "http://vjs.zencdn.net/v/oceans.webm"}
-      %source{src: "http://vjs.zencdn.net/v/oceans.ogv"}
+      %source{src: "http://chinko.s3.amazonaws.com/chinko_project_ambient.webm"}
+      %source{src: "http://chinko.s3.amazonaws.com/chinko_project_ambient.ogv"}
   .intro-body
     .container
       .row
@@ -17,3 +17,8 @@
             %a.page-scroll.btn.btn-default.btn-lg.btn-white{ href: '#introduction' }
               %span.glyphicon.glyphicon-chevron-down
               Learn more
+
+
+
+
+ffmpeg -i  -acodec libvorbis -ac 2 -ab 96k -ar 44100 -b 345k chinko_project_ambient.ogv
