@@ -15,10 +15,18 @@
         So far we've documented more than 75 mammals (including Wild Dog, Elephant, Lelwell
         Hartebeest, Eastern Giant Eland, Bongo, Lion and Leopard).
 
-      %p
-        Explore a selection of these pictures together with our publications online at our
-        = succeed '.' do
-          = link_to "research platform", "http://research.chinkoproject.com", { target: '_blank' }
+      %p.text-center
+        %a.btn.btn-default.btn-lg{href: "http://research.chinkoproject.com/camera_events"}
+          70,000 Camera trap photos
+        %a.btn.btn-default.btn-lg{href: "http://research.chinkoproject.com/species_list"}
+          70 mammals
+        %a.btn.btn-default.btn-lg{href: "http://research.chinkoproject.com/publications"}
+          8 publications
+
+      %p.text-center
+        %a.btn.btn-default.btn-sm{href: "http://research.chinkoproject.com/"}
+          Explore research database
+
 
       %p
         #wildlife-carousel.owl-carousel
