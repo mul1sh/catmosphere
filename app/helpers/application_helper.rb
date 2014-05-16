@@ -154,6 +154,17 @@ Retired from the Central African government where he rendered service in a numbe
 
 Since 2013 he dedicates his invaluable experience and knowledge of Central African bureaucracy to carry through the set up Chinko Project he co-founded.
 HTML
+          },
+          {
+            name: "Erik Mararv",
+            title: "Board Member, Founder",
+            email: nil,
+            image: "erik-mararv.jpg",
+            cv: <<-HTML
+Erik owns the safari company Central African Wildlife Adventures, together with his wife Emelie. Born and raised in the CAR, he has decade long experience in guiding safaris in CAR.
+
+Since then, Erik has an extensive network in the country, and profound knowledge of adminitstrative processes in Central Africa - without which the Chinko Project could not have been founded.
+HTML
           }
         ],
 
