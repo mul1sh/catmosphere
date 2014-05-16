@@ -4,5 +4,10 @@
 
 $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
   event.preventDefault()
-  $(this).ekkoLightbox()
+  $(this).ekkoLightbox({
+    onShow: ()->
+      document.getElementById('ambient_video').pause()
+    onHidden: ()->
+      document.getElementById('ambient_video').play()
+    })
 )
