@@ -1,5 +1,5 @@
 %section#donate
-  .donate-background
+  .white-background
     .container
       .col-lg-8.col-lg-offset-2
         %h2.text-center Donate
@@ -13,7 +13,7 @@
           = succeed ',' do
             = link_to 'USFWS', 'http://www.fws.gov/', target: '_blank'
           = succeed ',' do
-            = link_to 'APN', '#' #, target: '_blank'
+            = link_to 'APN', '#' 'http://www.african-parks.org/', target: '_blank'
           = succeed ',' do
             = link_to "ANPN", "http://www.parcsgabon.org/l-anpn/l-agence", target: '_blank'
           = succeed ', the' do
@@ -23,15 +23,23 @@
           = succeed ', the' do
             = link_to "Panthera", "http://www.panthera.org/", target: '_blank'
           = succeed ' and' do
-            = link_to "Foundation for Wildlife Ecology Basel", '#' #, target: '_blank'
+            Foundation for Wildlife Ecology Basel
           = succeed ')' do
             = link_to "CAWA", "http://www.cawasafari.com/", target: '_blank'
           and by the many passionate private supporters.
 
+    .container
+      .row
+        - donations.each_with_index do |donation, index|
+          %div{ class: index==0 ? 'col-md-2 donation col-md-offset-2' : 'col-md-2 donation col-md-offset-1'}
+            = image_tag('donations/'+ donation[:image], class: 'img-responsive')
+            = form_tag donations_path do
+              %input{ name: 'amount', value: donation[:data][:amount], type: 'hidden' }
+              %script.stripe-button{data: donation[:data].merge({ key: Rails.configuration.stripe[:publishable_key] }), src: "https://checkout.stripe.com/checkout.js"}
+
+    .container
+      .col-lg-8.col-lg-offset-2
         %p.text-center
-          %a.btn.btn-default.btn-lg{ href: 'mailto:donate@chinkoproject.com' }
-            Donate Now!
-        %p
           or contact our
           = succeed '.' do
             = link_to 'donor liaison team', 'mailto:donate@chinkoproject.com'
