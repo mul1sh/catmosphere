@@ -177,3 +177,47 @@ ol.actions li {
 .donation {
   text-align: center;
 }
+
+#custom-amount {
+  background: #FFF;
+  font-weight: bold;
+  border: 1px solid #229ce2;
+}
+
+.custom-amount-form {
+  display: none;
+}
+
+.custom-amount-form .input-group {
+  margin-bottom: 15px;
+}
+
+.custom-amount-form .input-group-addon {
+  color: #FFF;
+  font-weight: bold;
+  background: #1275ff;
+  background-image: -webkit-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -moz-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -ms-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -o-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -webkit-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -moz-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -ms-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: -o-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  background-image: linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  -o-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#donate abbr {
+  border-bottom: 1px dotted #229ce2;
+  cursor: pointer;
+}

@@ -4,6 +4,11 @@
       .col-lg-8.col-lg-offset-2
         %h2.text-center Donate
 
+        - if notice
+          = render partial: 'shared/notice', locals: { notice: notice }
+        - if alert
+          = render partial: 'shared/alert', locals: { alert: alert }
+
         %p
           As a young Non-Profit Organisation working in a challenging environment, support
           is essential.
@@ -40,6 +45,14 @@
     .container
       .col-lg-8.col-lg-offset-2
         %p.text-center
-          or contact our
-          = succeed '.' do
-            = link_to 'donor liaison team', 'mailto:donate@chinkoproject.com'
+          or
+          = succeed "." do
+            %abbr> pledge a custom amount
+
+      .col-lg-2.col-lg-offset-5.text-center
+        = form_tag donations_path, class: 'form-inline custom-amount-form' do
+          .input-group
+            %span.input-group-addon $
+            %input#custom-amount.form-control{type: "number", value: '150', name: 'amountCustom'}
+            %span.input-group-addon .00
+          %script.stripe-button{data: { key: Rails.configuration.stripe[:publishable_key], description: 'Chinko Project' }, src: "https://checkout.stripe.com/checkout.js"}

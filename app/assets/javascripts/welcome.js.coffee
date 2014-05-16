@@ -11,3 +11,9 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
       document.getElementById('ambient_video').play()
     })
 )
+
+
+$(document).ready ->
+  $('#donate abbr').click ->
+    $(this).parent().parent().hide()
+    $('form.custom-amount-form').fadeIn()

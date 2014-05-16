@@ -2,7 +2,7 @@ class DonationsController < ApplicationController
 
   def create
     # Amount in cents
-    @amount = params[:amount]
+    @amount = params[:amount] || (params[:amountCustom].to_i * 100)
 
     customer = Stripe::Customer.create(
       :email => 'example@stripe.com',
@@ -13,14 +13,14 @@ class DonationsController < ApplicationController
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Rails Stripe customer',
-      :currency    => 'eur'
+      :currency    => 'usd'
     )
 
-    flash[:notice] = "Thanks, you paid <strong>$5.00</strong>!"
-    redirect_to root_path
+    flash[:notice] = "Thank you for donating $#{(@amount.to_i / 100).to_s}.00!"
+    redirect_to root_path + '#donate'
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to root_path
+    redirect_to root_path + '#donate'
   end
 
 end
