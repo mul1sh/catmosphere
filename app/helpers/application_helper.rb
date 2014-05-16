@@ -72,7 +72,7 @@ She has ever since been involved into helping grassroots development initiatives
 HTML
           }
         ],
-        volutary_capacity: [
+        honorary_capacity: [
           {
             name: "Constantin Hofstetter",
             title: "Information Technologies",
@@ -123,12 +123,12 @@ HTML
         ],
         board: [
           {
-            name: "Jean Marc Fromment",
+            name: "Jean Marc Froment",
             title: "Board Member",
             email: nil,
-            image: "jean-marc-fromment.jpg",
+            image: "jean-marc-froment.jpg",
             cv: <<-HTML
-Jean Marc graduated at the University of Liege (Belgium) where he got his MSc in biology and specialization in ecology and wildlife management. He has since devoted his life to wildlife conservation in Africa with a special interest in big, remote and sparsely populated ecosystems. He began his career in 1981 working for FAO and then for the European Comission on the management of the protected areas of Northern CAR.
+Jean Marc graduated at the University of Liege (Belgium) where he got his MSc in biology and specialization in ecology and wildlife management. He has since devoted his life to wildlife conservation in Africa with a special interest in big, remote and sparsely populated ecosystems. He began his career in 1981 working for FAO and then for the European Commission on the management of the protected areas of Northern CAR.
 
 Jean Marc joined African Parks in 2005, where he today serves as Conservation Director. He learned about the Chinko Project in 2012, and since then supports the board in taking the necessary steps for long term conservation.
 HTML
@@ -163,7 +163,7 @@ HTML
             cv: <<-HTML
 Erik owns the safari company Central African Wildlife Adventures, together with his wife Emelie. Born and raised in the CAR, he has decade long experience in guiding safaris in CAR.
 
-Since then, Erik has an extensive network in the country, and profound knowledge of adminitstrative processes in Central Africa - without which the Chinko Project could not have been founded.
+Since then, Erik has an extensive network in the country, and profound knowledge of administrative processes in Central Africa - without which the Chinko Project could not have been founded.
 HTML
           }
         ],
@@ -233,7 +233,7 @@ HTML
             cv: <<-HTML
 Michael Fay graduated in 1978 from the University of Arizona, and then joined the Peace Corps working in Tunisia and the Central African Republic. He completed his doctorate on the western lowland gorilla in 1997, while also surveying large forest blocks by aeroplane and working to create and manage the Dzanga-Sangha park and the Nouabalé-Ndoki National Park in the Central African Republic and Republic of the Congo.
 
-Michael has worked for the Wildlife Conservation Society since 1990, and was an Explorer in Residence at the National Geographic Society. Since 2006, Michael has been very actively supporting conservation work in Central Africa, particularly Chad and Gabon. He is asides many other things, currently working to establishing an ‘Agence National pour les Parc Nationaux’ (ANPN) in CAR.
+Michael has worked for the Wildlife Conservation Society since 1990, and was an Explorer in Residence at the National Geographic Society. Since 2006, Michael has been very actively supporting conservation work in Central Africa, particularly Chad and Gabon. He is asides many other things, currently working to establishing an ‘Agence Nationale pour les Parcs Nationaux’ (ANPN) in CAR.
 HTML
           }
         ]
