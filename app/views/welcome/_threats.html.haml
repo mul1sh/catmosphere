@@ -78,23 +78,3 @@
               %b Detect & disarm
               poaching infringers inside the nature reserve and hand them over to the next
               state authority.
-
-        %p
-          #action-carousel.owl-carousel
-            - %w(ghisnain-talking-on-educational-workshop-in-bakouma park-ranger-advising-herdsman-to-follow-livestock-cortridor).each do |name|
-              .image
-                = image_tag('action/'+ name +'.jpg')
-                .image-description
-                  = name.titleize
-
-          :javascript
-            $(document).ready(function(){
-              $("#action-carousel").owlCarousel({
-                  items: 1,
-                  loop: true,
-                  margin: 10,
-                  lazyLoad: true,
-                  merge: true,
-                  video: true
-                });
-            });
