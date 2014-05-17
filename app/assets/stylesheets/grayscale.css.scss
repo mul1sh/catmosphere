@@ -121,11 +121,10 @@ a:focus {
     }
 }
 
-.intro {
+#hero {
     display: table;
-    width: 100%;
-    height: 100%;
     padding: 100px 0;
+    height: 100%;
     text-align: center;
     color: #fff;
     background-color: #000;
@@ -135,9 +134,11 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro-body {
+.hero-body {
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
+    height: 100%;
 }
 
 .brand-heading {

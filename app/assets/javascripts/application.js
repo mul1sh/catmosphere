@@ -19,4 +19,5 @@
 //= require grayscale
 //= require owlcarousel
 //= require lightbox
+//= require skrollr
 //= require_tree .

@@ -11,8 +11,12 @@ $(window).scroll(function() {
 $(function() {
     $('.page-scroll a, a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+        var scrollTop = $($anchor.attr('href')).offset().top;
+        if ($($anchor).data('has-parallax') == "") {
+           scrollTop = scrollTop - ($(window).height() * 0.5);
+        }
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: scrollTop
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });

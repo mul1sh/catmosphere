@@ -1,3 +1,4 @@
+.parallax.parallax-area{ data: { center: 'background-position:0px 0px;', top: { bottom: 'background-position:0px 200px;' }  }, style: 'background-position: 0px 0px;' }
 %section#area.content-section.container
   .row
     .col-lg-8.col-lg-offset-2
@@ -11,23 +12,3 @@
       %p.text-center
         %a.btn.btn-default.btn-lg{href: "http://research.chinkoproject.com/habitat_map"}
           Explore Habitat Map
-
-      %p
-        #area-carousel.owl-carousel
-          - %w(from-savannah-into-forest rainforest-canopy savannah-opening-in-southern-chinko the-chinko-river transition-between-rainforest-and-savannah).each do |name|
-            .image
-              = image_tag('area/'+ name +'.jpg')
-              .image-description
-                = name.titleize
-
-        :javascript
-          $(document).ready(function(){
-            $("#area-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                lazyLoad: true,
-                merge: true,
-                video: true
-              });
-          });
