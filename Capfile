@@ -3,7 +3,7 @@ require 'ratchetify'
 
 # the application's name
 set :application, 'chinkoproject'
-set :host, 'dev'
+set :host, 'www'
 set :domain, 'chinkoproject.com'
 
 # SSH user/password
