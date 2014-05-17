@@ -7,9 +7,9 @@
         %h3= group.to_s.titleize
         - members.each do |member|
           .row
-            .col-lg-2
-              = image_tag('team/' + member[:image])
-            .col-lg-10
+            .col-xs-2.col-lg-2
+              = image_tag('team/' + member[:image], class: 'img-responsive')
+            .col-xs-10.col-lg-10
               %h4
                 = member[:name]
                 %small
