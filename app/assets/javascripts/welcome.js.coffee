@@ -14,7 +14,8 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
 
 
 init = ->
-  skrollr.init({ forceHeight: false })
+  unless (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)
+    skrollr.init({ forceHeight: false })
   $('#donate abbr').click ->
     $(this).parent().parent().hide()
     $('form.custom-amount-form').fadeIn()
