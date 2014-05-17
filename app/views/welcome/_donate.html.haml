@@ -53,6 +53,6 @@
         = form_tag donations_path, class: 'form-inline custom-amount-form' do
           .input-group
             %span.input-group-addon $
-            %input#custom-amount.form-control{type: "number", value: '150', name: 'amountCustom'}
+            %input#custom-amount.form-control{type: "number", value: '150', name: 'amountCustom', min: '1'}
             %span.input-group-addon .00
           %script.stripe-button{data: { key: Rails.configuration.stripe[:publishable_key], description: 'Chinko Project' }, src: "https://checkout.stripe.com/checkout.js"}
