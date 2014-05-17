@@ -5,14 +5,13 @@ class DonationsController < ApplicationController
     @amount = params[:amount] || (params[:amountCustom].to_i * 100)
 
     customer = Stripe::Customer.create(
-      :email => 'example@stripe.com',
       :card  => params[:stripeToken]
     )
 
     charge = Stripe::Charge.create(
       :customer    => customer.id,
       :amount      => @amount,
-      :description => 'Rails Stripe customer',
+      :description => 'Chinko Project donation',
       :currency    => 'usd'
     )
 
