@@ -1,0 +1,38 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+
+$(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
+  event.preventDefault()
+  $(this).ekkoLightbox({
+    onShow: ()->
+      document.getElementById('ambient_video').pause()
+    onHidden: ()->
+      document.getElementById('ambient_video').play()
+    })
+)
+
+
+HeroAmbientVideo = ->
+  vid  = $("<video id='ambient_video' autoplay loop muted preload='auto'></video>")
+  $(vid).append("<source src='http://vimeo.com/95474106/download?t=1400259250&v=254203230&s=3539f9260a0564b7828e0fe22db8e7bb'/>")
+  $(vid).append("<source src='http://chinko.s3.amazonaws.com/chinko_project_ambient.webm'/>")
+  $(vid).append("<source src='http://chinko.s3.amazonaws.com/chinko_project_ambient.ogv'/>")
+  $('#video_wrapper').append(vid);
+
+HeroBackground = ->
+  $('#video_wrapper').css('background-image',"url('<%= image_path('hero/ambient.jpg') %>')")
+init = ->
+  if (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)
+    HeroBackground()
+  else
+    HeroAmbientVideo()
+    skrollr.init({ forceHeight: false })
+
+  $('#donate abbr').click ->
+    $(this).parent().parent().hide()
+    $('form.custom-amount-form').fadeIn()
+
+
+$(window).bind('page:change', -> init())
+$(window).bind('page:restore', -> init())
