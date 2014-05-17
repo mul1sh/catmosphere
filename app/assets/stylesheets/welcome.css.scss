@@ -230,6 +230,24 @@ ol.actions li {
   -moz-box-shadow: inset 0px 0px 71px 4px rgba(0,0,0,0.62);
   box-shadow: inset 0px 0px 71px 4px rgba(0,0,0,0.62);
 }
+
 .parallax-area {
   background-image: asset-url('parallax/area.jpg');
+}
+
+.parallax-people {
+  background-image: asset-url('parallax/people.jpg');
+}
+
+.parallax-wildlife {
+  background-image: asset-url('parallax/wildlife.jpg');
+}
+
+.parallax-donate {
+  background-image: asset-url('parallax/donate.jpg');
+}
+
+#subscribe {
+  height: 100%;
+  width: 100%;
 }

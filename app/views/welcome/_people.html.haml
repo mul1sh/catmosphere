@@ -1,3 +1,4 @@
+.parallax.parallax-people{ data: { center: 'background-position:0px 0px;', top: { bottom: 'background-position:0px 800px;' }  }, style: 'background-position: 0px 0px;' }
 %section#people.people-section
   .white-background
     .container
@@ -16,7 +17,7 @@
 
         %p
           #people-carousel.owl-carousel
-            - %w(transhumant-herdsmen-family villager-of-bakouma-preparing-peanut-butter bakouma-school-children emelie-teaching-a-class-in-bakouma).each do |name|
+            - %w(emelie-teaching-a-class-in-bakouma bakouma-school-children villager-of-bakouma-preparing-peanut-butter).each do |name|
               .image
                 = image_tag('people/'+ name +'.jpg')
                 .image-description

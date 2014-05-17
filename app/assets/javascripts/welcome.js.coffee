@@ -13,8 +13,12 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
 )
 
 
-$(document).ready ->
+init = ->
   skrollr.init({ forceHeight: false })
   $('#donate abbr').click ->
     $(this).parent().parent().hide()
     $('form.custom-amount-form').fadeIn()
+
+
+$(window).bind('page:change', -> init())
+$(window).bind('page:restore', -> init())
