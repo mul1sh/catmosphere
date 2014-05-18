@@ -20,7 +20,7 @@ HTML
             email: "raffael@chinkoproject.com",
             image: "raffael-hickisch.jpg",
             cv: <<-HTML
-Raffael completed studied in Social Ecology and Computer Science. He did research (mainly sustainability science) in Senegal and Kenya where he received a research fellowship.
+Raffael studied Social Ecology and Computer Science. He did research (mainly sustainability science) in Senegal and Kenya where he received a research fellowship.
 
 He was awarded the Panthera Kaplan grant for the field research in the Chinko/Mbari drainage basin, that he and Thierry Aebischer conducted since 2012. Even though he runs <a href='forscherei.at'>forscherei.at</a>, an institution supporting young researchers, most of his scientific activity concerns the Chinko Area.
 
@@ -79,7 +79,7 @@ HTML
             email: "consti@consti.de",
             image: "constantin-hofstetter.jpg",
             cv: <<-HTML
-Constantin Hofstetter follows the Medical Computer Science Masters programme at the University of Vienna, where has also worked. Constantin co-founded a company that received funding <a href='http://ycombinator.com'>Y Combinator</a> funding (2008) and has been working as CTO of Tupalo.com the four years after.
+Constantin Hofstetter follows the Medical Computer Science Masters programme at the University of Vienna, where has also worked. Constantin co-founded a company that received funding <a href='http://ycombinator.com'>Y Combinator</a> funding (2008) and has been working as Head of Development at Tupalo.com the four years after.
 
 He supports the Chinko Project with technical implementation and planning of numerous advanced technologies. He takes care of the Chinko Project website and has put a significant share of his free time into advancing the research platform.
 HTML
