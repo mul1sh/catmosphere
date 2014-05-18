@@ -79,9 +79,7 @@ HTML
             email: "consti@consti.de",
             image: "constantin-hofstetter.jpg",
             cv: <<-HTML
-Constantin Hofstetter follows the Medical Computer Science Masters programme at the University of Vienna, where has also worked. Constantin co-founded a company that received funding <a href='http://ycombinator.com'>Y Combinator</a> funding (2008) and has been working as Head of Development at Tupalo.com the four years after.
-
-He supports the Chinko Project with technical implementation and planning of numerous advanced technologies. He takes care of the Chinko Project website and has put a significant share of his free time into advancing the research platform.
+Constantin supports the Chinko Project with technical implementation and planning of numerous advanced technologies. He takes care of the Chinko Project website and has put a significant share of his free time into advancing the research platform.
 HTML
           },
           {
