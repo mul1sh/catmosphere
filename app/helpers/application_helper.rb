@@ -235,7 +235,19 @@ Michael Fay graduated in 1978 from the University of Arizona, and then joined th
 
 Michael has worked for the Wildlife Conservation Society since 1990, and was an Explorer in Residence at the National Geographic Society. Since 2006, Michael has been very actively supporting conservation work in Central Africa, particularly Chad and Gabon. He is asides many other things, currently working to establishing an ‘Agence Nationale pour les Parcs Nationaux’ (ANPN) in CAR.
 HTML
+          },
+          {
+            name: "Anton Lundkvist",
+            title: "Advisor",
+            email: nil,
+            image: "anton-lundkvist.jpg",
+            cv: <<-HTML
+Having lived and worked more than 15 years in Central African Republic Anton is currently completing his MSc in GIS/Geomatics at Lunds University in Sweden. Asides being on the Chinko Project board. he is working in a selection of land use management projects in Kenya, Tanzania and Uganda.
+
+As of his decades long experience in Africa, Anton is proficient in Swedish, English, French and Sango and speaks Swahili as well as Spanish.
+HTML
           }
+
         ]
       }
   end
