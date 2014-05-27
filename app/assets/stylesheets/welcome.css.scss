@@ -105,13 +105,23 @@ ol.actions li {
     outline: 0;
 }
 
-#newsletter button {
-  height: 40px;
-}
 
 #newsletter input {
   height: 40px;
+  background-color: #000;
+  color: #FFF;
 }
+
+#newsletter button {
+  height: 40px;
+  background-color: #000;
+  color: #FFF;
+  &:hover {
+    background-color: #28c3ab;
+    color: #000;
+  }
+}
+
 
 .modal-dialog {
   color: #000;
