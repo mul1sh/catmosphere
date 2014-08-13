@@ -55,4 +55,4 @@ group :development do
   gem 'ratchetify', github: 'consti/ratchetify'
 end
 
-ruby '2.1.1'
+ruby '2.1.2'
