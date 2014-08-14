@@ -2,13 +2,14 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-mp4_video_url = "http://player.vimeo.com/external/95474106.hd.mp4?s=42ae041541e5ba4b2c9ba5706122e3f9"
+# mp4_video_url = "https://dl.dropboxusercontent.com/s/p3inkr9v8gfgwyb/catmosphere-SD.mp4"
+mp4_video_url = "http://localhost/Website.mp4"
 
 $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
   event.preventDefault()
 
   if (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)
-    document.location = "http://vimeo.com/95532257/download?t=1401213528&v=254398226&s=9b1b7a749b51d032fb326942bf9fffc2"
+    document.location = "https://www.dropbox.com/s/kj828gisoi128cz/catmosphere.mp4"
 
   $(this).ekkoLightbox({
     onShow: ()->
@@ -22,8 +23,8 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
 HeroAmbientVideo = ->
   vid  = $("<video id='ambient_video' autoplay loop muted preload='auto'></video>")
   $(vid).append($("<source/>").attr('src', mp4_video_url))
-  $(vid).append("<source src='http://chinko.s3.amazonaws.com/chinko_project_ambient.webm'/>")
-  $(vid).append("<source src='http://chinko.s3.amazonaws.com/chinko_project_ambient.ogv'/>")
+  # $(vid).append("<source src='https://dl.dropboxusercontent.com/s/nw5z1vb37sc0pma/catmosphere.webm'/>")
+  # $(vid).append("<source src='https://dl.dropboxusercontent.com/s/wc07kvrfzn06o8m/catmosphere.ogv'/>")
   $('#video_wrapper').append(vid);
 
 HeroBackground = ->
