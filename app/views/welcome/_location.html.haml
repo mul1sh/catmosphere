@@ -1,5 +1,4 @@
 .parallax.parallax-location{ data: { center: 'background-position:0px 0px;', top: { bottom: 'background-position:0px 200px;' }  }, style: 'background-position: 0px 0px;' }
 %section#location
   .white-background
-    .container
-      [MAP]
+    %iframe{:src => "https://www.google.com/maps/embed/v1/place?q=catmosphere%20cafe&key=AIzaSyDWRlqou1Q1tDXb25hzhxW-cFqe0WaWT-s", :width => "600", :height => "300", :frameborder => "0"}

@@ -1,20 +1,17 @@
 .parallax.parallax-cats{ data: { center: 'background-position:0px 0px;', top: { bottom: 'background-position:0px 200px;' }  }, style: 'background-position: 0px 0px;' }
-%section#team
-  .white-background
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          %h2.text-center The Cats
+%section#team.gcontainer.content-section
+  .row
+    .col-lg-8.col-lg-offset-2
+      %h2.text-center The Catstronauts
 
-          - team.each do |group, members|
-            %h3= group.to_s.titleize
-            - members.each do |member|
-              .row
-                .col-xs-4.col-lg-4
-                  = image_tag('team/' + member[:image], class: 'img-responsive')
-                .col-xs-8r.col-lg-8
-                  %h4
-                    = member[:name]
-                    %small
-                      = member[:title]
-                  = simple_format member[:cv]
+      - team.each do |group, members|
+        - members.each do |member|
+          .row.table-padded
+            .col-md-4
+              = image_tag('team/' + member[:image], class: 'img-responsive')
+            .col-md-8
+              %h4
+                = member[:name]
+                %small
+                  = member[:title]
+              = simple_format member[:cv]
