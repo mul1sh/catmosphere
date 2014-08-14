@@ -22,11 +22,16 @@
 }
 
 .white-background {
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   padding: 100px 0 100px 0;
 }
 
+.green-background {
+  background-color: #3ea3ad;
+  color: #fff;
+  padding: 100px 0 100px 0;
+}
 
 .content-section {
     padding: 100px 0 100px 0;
@@ -243,21 +248,18 @@ ol.actions li {
   box-shadow: inset 0px 0px 71px 4px rgba(0,0,0,0.62);
 }
 
-.parallax-area {
+.parallax-cats {
   background-image: asset-url('parallax/area.jpg');
 }
 
-.parallax-people {
-  background-image: asset-url('parallax/people.jpg');
+.parallax-location {
+  background-image: asset-url('parallax/location.jpg');
 }
 
-.parallax-wildlife {
-  background-image: asset-url('parallax/wildlife.jpg');
+.parallax-coffee {
+  background-image: asset-url('parallax/coffee.jpg');
 }
 
-.parallax-donate {
-  background-image: asset-url('parallax/donate.jpg');
-}
 
 #subscribe {
   height: 100%;
