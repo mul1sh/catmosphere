@@ -9,9 +9,11 @@
           .row.table-padded
             .col-md-4
               = image_tag('team/' + member[:image], class: 'img-responsive')
-            .col-md-8
+            .col-md-6
               %h4
                 = member[:name]
                 %small
                   = member[:title]
               = simple_format member[:cv]
+
+
