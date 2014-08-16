@@ -1,4 +1,30 @@
 .parallax.parallax-location{ data: { center: 'background-position:0px 0px;', top: { bottom: 'background-position:0px 200px;' }  }, style: 'background-position: 0px 0px;' }
-%section#location
-  .white-background
-    %iframe{:src => "https://www.google.com/maps/embed/v1/place?q=catmosphere%20cafe&key=AIzaSyDWRlqou1Q1tDXb25hzhxW-cFqe0WaWT-s", :width => "600", :height => "300", :frameborder => "0"}
+%section#location.container.content-section
+  %h2.text-center Contact and Location
+  .row
+    .col-md-6.col-lg-offset-3
+      %iframe{:src => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3776.812085687693!2d98.957654!3d18.806525999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a42ad2cba41%3A0x580846582945630c!2sCatmosphere+Cat+Caf%C3%A9!5e0!3m2!1sen!2sus!4v1408182246182&key=AIzaSyDWRlqou1Q1tDXb25hzhxW-cFqe0WaWT-s", :height => "300", :frameborder => "0"}
+  .row
+    .col-md-6.col-lg-offset-3.text-center
+      %br
+      %a{ :title => 'Facebook', :href => "http://www.facebook.com/catmospherecafe" }
+        %i.fa.fa-facebook-square.fa-3x 
+      \&nbsp;
+      %a{ :title => 'Instagram', :href => "http://instagram.com/catmospherecafe" }
+        %i.fa.fa-instagram.fa-3x
+      \&nbsp;
+      %a{ :title => 'Google+', :href => "https://plus.google.com/116372658129649558597/about" }
+        %i.fa.fa-google-plus-square.fa-3x 
+      \&nbsp;
+      %a{ :title => 'Facebook', :href => "http://www.facebook.com/catmospherecafe" }
+        %i.fa.fa-youtube-square.fa-3x
+      \&nbsp;
+      %a{ :title => 'Email', :href => "mailto:office@catmospherecafe.com" }
+        %i.fa.fa-envelope-o.fa-3x
+    .col-md-3
+  .row
+    .col-md-6.col-lg-offset-3.text-center
+      LINE: catmospherecafe
+    .col-md-3
+
+
