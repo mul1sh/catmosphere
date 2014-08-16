@@ -28,7 +28,6 @@ HeroAmbientVideo = ->
   $('#video_wrapper').append(vid);
 
 HeroBackground = ->
-  $('#video_wrapper').css('background-image',"url('<%= image_path('hero/ambient.jpg') %>')")
 init = ->
   if (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)
     HeroBackground()
