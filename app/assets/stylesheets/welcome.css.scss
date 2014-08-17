@@ -58,6 +58,14 @@
 
 }
 
+@media(max-width:767px) {
+    .content-section {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+}
+
+
 ol.threats li {
   border-left: 4px solid #d9534f;
   padding: 0 0 0 20px;

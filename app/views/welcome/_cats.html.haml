@@ -1,5 +1,5 @@
 .parallax.parallax-cats{ data: { center: 'background-position:0px 0px;', top: { bottom: 'background-position:0px 200px;' }  }, style: 'background-position: 0px 0px;' }
-%section#team.container
+%section#team.container.content-section
   %h1.text-center
     The Team
   .row
@@ -8,6 +8,7 @@
         .row.table-padded
           .col-sm-4.col-sm-offset-1
             = image_tag('team/' + member[:image], class: 'img-responsive')
+            %br
           .col-sm-6
             %h4
               = member[:name]

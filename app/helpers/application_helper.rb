@@ -66,10 +66,10 @@ module ApplicationHelper
             cv: <<-HTML
               A talended pilot, Buzz can keep his calm in even the most daunting situations. His cool demeanor gives him an advantage in space combat but also makes him seem "cold" in relationships.
               <small>
-              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> 
-              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>              
               HTML
           },
