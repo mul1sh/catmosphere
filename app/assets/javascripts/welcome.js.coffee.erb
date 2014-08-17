@@ -28,17 +28,14 @@ HeroAmbientVideo = ->
   $('#video_wrapper').append(vid);
 
 HeroBackground = ->
+  $('#video_wrapper').css('background-image',"url('<%= image_path('ambient.jpg') %>')")
+
 init = ->
   if (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)
     HeroBackground()
   else
     HeroAmbientVideo()
     skrollr.init({ forceHeight: false })
-
-  $('#donate abbr').click ->
-    $(this).parent().parent().hide()
-    $('form.custom-amount-form').fadeIn()
-
 
 $(window).bind('page:change', -> init())
 $(window).bind('page:restore', -> init())
