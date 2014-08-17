@@ -2,14 +2,14 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-# mp4_video_url = "https://dl.dropboxusercontent.com/s/p3inkr9v8gfgwyb/catmosphere-SD.mp4"
-mp4_video_url = "http://localhost/Website.mp4"
+mp4_video_url = "http://dl.dropbox.com/s/l8v255a2m9bjzmn/catmosphere-compressed.mp4"
+# mp4_video_url = "http://localhost/Website.mp4"
 
 $(document).delegate('*[data-toggle="lightbox"]', 'click', (event)->
   event.preventDefault()
 
   if (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)
-    document.location = "https://www.dropbox.com/s/kj828gisoi128cz/catmosphere.mp4"
+    document.location = "http://dl.dropbox.com/s/l8v255a2m9bjzmn/catmosphere-compressed.mp4"
 
   $(this).ekkoLightbox({
     onShow: ()->
