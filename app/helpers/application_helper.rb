@@ -134,7 +134,7 @@ module ApplicationHelper
             title: "Headhunter | Persian",
             image: "07-boba.jpg",
             cv: <<-HTML
-              A merciless headhunter from a galaxy far, far away. Many have been fooled by harmless appearance - a bitter mistake that yields harsh consequences.
+              A merciless headhunter from an unknown galaxy. Many have been fooled by harmless appearance - a bitter mistake that yields harsh consequences.
               <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
@@ -148,7 +148,7 @@ module ApplicationHelper
             title: "Cuddle Princess | American Shorthair",
             image: "01-ming.jpg",
             cv: <<-HTML
-              A princess from a planet far away, Ming found a new home at Catmosphere after her home planet was destroyed. Her beauty is unmatched in the Galaxy - a fact that she uses to her advantage.
+              Princess Ming found a new home at Catmosphere after her home planet was destroyed. Her beauty is unmatched in the Galaxy - a fact that she uses to her advantage.
               <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
