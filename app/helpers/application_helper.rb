@@ -106,7 +106,7 @@ module ApplicationHelper
             title: "Queen | American Shorthair / Persian",
             image: "10-phoebe.jpg",
             cv: <<-HTML
-              Phoebe was born on a far-away planet. She arrived at Earth after traversing the Universe on a comet and was taken in by the Catmopshere family.
+              Phoebe was born on a far-away planet. She arrived at Earth after traversing the Universe on a comet and was taken in by the family.
               <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
