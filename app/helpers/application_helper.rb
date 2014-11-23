@@ -190,10 +190,10 @@ module ApplicationHelper
             title: "Cadet | Maine Coon / Persian",
             image: "14-jeanluc.jpg",
             cv: <<-HTML
-              Anakin is a talented Jedi figher with high ambitions. Unfortunately modesty is not one of his strenghts - he tends to overestimate himself and get into a lot of trouble.
+              Jean Luc is a graduate from the renowned "espace académie de chats" in Paris. He is a reliable fighter pilot who has been known to call out some other team members for acting irresponsibly. Has a love-hate relationship with Eve.
               <small>
-              Cuddly: <i class="fa fa-star"></i>
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>
