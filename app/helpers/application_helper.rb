@@ -5,7 +5,7 @@ module ApplicationHelper
         row1: [
                 {
             name: "Ace",
-            title: "Space Pilot | Bengal Cat",
+            title: "Space Pilot | Bengal",
             image: "02-ace.jpg",
             cv: <<-HTML
               Due to his fearless and sometimes rude behaviour this top pilot may seem inconsiderate to some. But a look into his eyes reveals a smart and caring mind.
@@ -19,7 +19,7 @@ module ApplicationHelper
           },
           {
             name: "Luna",
-            title: "Magician | Thai Cat",
+            title: "Magician | Siamese",
             image: "08-luna.jpg",
             cv: <<-HTML
               Luna is the lone survivor of an ancient alien race. She has the skill of enchanting the hearts of fellow cats using her magical stare and is usually found cuddled up with a cat friend. 
@@ -33,7 +33,7 @@ module ApplicationHelper
           },
           {
             name: "Eve",
-            title: "Fighter Pilot | Bengal Cat",
+            title: "Fighter Pilot | Bengal",
             image: "03-eve.jpg",
             cv: <<-HTML
               Eve's umatched talent in space battle is feared throughout the Galaxy. The fusion reactor attached to her body gives her unlimited energy - as a result she doesn't need any sleep. 
@@ -75,7 +75,7 @@ module ApplicationHelper
           },
           {
             name: "Obi Wan",
-            title: "Jedi Master | Maine Coon + Chinchilla Cat",
+            title: "Jedi Master | Maine Coon / Chinchilla Cat",
             image: "06-obiwan.jpg",
             cv: <<-HTML
               Obi Wan mastered the art of the Jedi at a young age. A powerful Jedi, he finds himself in a constant struggle against the dark side of the force.
@@ -103,7 +103,7 @@ module ApplicationHelper
           },
           {
             name: "Phoebe",
-            title: "Padawan | American Shorthair / Persian",
+            title: "Queen | American Shorthair / Persian",
             image: "10-phoebe.jpg",
             cv: <<-HTML
               Phoebe was born on a far-away planet. She arrived at Earth after traversing the Universe on a comet and was taken in by the Catmopshere family.
@@ -131,7 +131,7 @@ module ApplicationHelper
           },
           {
             name: "Boba",
-            title: "Headhunter | Persian",
+            title: "Headhunter | Siamese / Persian",
             image: "07-boba.jpg",
             cv: <<-HTML
               A merciless headhunter from an unknown galaxy. Many have been fooled by harmless appearance - a bitter mistake that yields harsh consequences.
@@ -173,8 +173,22 @@ module ApplicationHelper
           },
           {
             name: "Anakin",
-            title: "Padawan | American Shorthar",
+            title: "Padawan | American Shorthair",
             image: "12-anakin.jpg",
+            cv: <<-HTML
+              Anakin is a talented Jedi figher with high ambitions. Unfortunately modesty is not one of his strenghts - he tends to overestimate himself and get into a lot of trouble.
+              <small>
+              Cuddly: <i class="fa fa-star"></i>
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              </small>
+              HTML
+          },
+          {
+            name: "Jean Luc",
+            title: "Cadet | Maine Coon / Persian",
+            image: "14-jeanluc.jpg",
             cv: <<-HTML
               Anakin is a talented Jedi figher with high ambitions. Unfortunately modesty is not one of his strenghts - he tends to overestimate himself and get into a lot of trouble.
               <small>
