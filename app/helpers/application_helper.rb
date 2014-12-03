@@ -232,7 +232,7 @@ module ApplicationHelper
             title: "Scientist | Siamese",
             image: "17-murph.jpg",
             cv: <<-HTML
-              Murph is a physician an mathematician who is working on a "theory of everyhting". Her goal is to unify quantum mechanics with general relativity.
+              A gifted theoretical physicist and mathematician who is working on a "theory of everyhting". Her goal is to unify quantum mechanics with general relativity.
               <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
