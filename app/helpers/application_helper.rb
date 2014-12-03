@@ -199,6 +199,48 @@ module ApplicationHelper
               </small>
               HTML
           },
+          {
+            name: "Yoda",
+            title: "Jedi Master | Persian",
+            image: "15-yoda.jpg",
+            cv: <<-HTML
+              An ancient Jedi, Yoda has obtained complete mastery of the force. He fools his enemies by pretending to be shy and sleepy. 
+              <small>
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i>
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              </small>
+              HTML
+          },
+          {
+            name: "Leeloo",
+            title: "Cyborg | Siamese",
+            image: "16-leeloo.jpg",
+            cv: <<-HTML
+              Leeloo arrived from the future in a time machine and has been stuck in the present ever since. Luckily she made friends with the crew at Catmosphere.
+              <small>
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              </small>
+              HTML
+          },                    
+          {
+            name: "Murph",
+            title: "Scientist | Siamese",
+            image: "17-murph.jpg",
+            cv: <<-HTML
+              Murph is a physician an mathematician who is working on a "theory of everyhting". Her goal is to unify quantum mechanics with general relativity.
+              <small>
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              </small>
+              HTML
+          },
         ],
       }
   end
