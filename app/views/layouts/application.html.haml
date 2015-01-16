@@ -7,14 +7,14 @@
 
     -->
   %head
-    %title Catmosphere Cat Café Chiang Mai
+    %title Catmosphere Cat Café
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
 
     %meta{charset: "utf-8"}/
     %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui", name: "viewport"}/
-    %meta{content: "Catmosphere Café Chiang Mai. The world's first space-themed cat café.", name: "description"}/
+    %meta{content: "Catmosphere Cat Café. The world's first space-themed cat café.", name: "description"}/
     %meta{content: "", name: "author"}/
 
     %link{href: image_path('favicon/apple-touch-icon-57x57.png'), rel: "apple-touch-icon", sizes: "57x57"}/
@@ -50,7 +50,7 @@
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
-    = render partial: 'shared/navbar'
+
     = yield
 
     :javascript
