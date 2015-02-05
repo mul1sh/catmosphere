@@ -1,9 +1,36 @@
 %section#introduction
   .white-background
     .container.content-section
-      .col-lg-8.col-lg-offset-2
-        %p.text-center
-          =image_tag('Catmosphere-Logo.png', width: '200')
-        %h3.text-center About Catmosphere Café Chiang Mai
-        %p.text-center
-          Catmosphere is a space-themed cat café located in Chiang Mai, Thailand. Our café is a tribute to all those brave cats who have dedicated their lives to space exploration. It features decoration and art by several artists from Thailand and abroad. Visitors can enjoy served high-quality local coffee, home-made dishes and pastries. And of course play with our friendly cats!
+      .row
+        .col-lg-8.col-lg-offset-2
+          %p.text-center
+            =image_tag('Catmosphere-Logo.png', width: '200')
+          %h3.text-center About Catmosphere Cat Café
+          %p.text-center
+            Catmosphere is the first global space cat café franchise. Our mission: to seek out new life and new civilizations, to boldly go where no cat has gone before. Get more information about our locations below.
+        %br
+      .row
+        .col-sm-4.text-center
+          %a{href: "/chiangmai"}
+            = image_tag('chiangmai.jpg', class: 'img-responsive')
+          %br
+          %h4.text-center Chiang Mai
+          %p.text-center
+            19 cats, home-made bakery, coffee from local farmers, plus a soon-to-open cat cinema. What's not to like?
+          %br
+        .col-sm-4.text-center
+          %a{href: "/sydney"}
+            = image_tag('sydney.jpg', class: 'img-responsive')
+            %br
+
+          %h4.text-center Sydney
+          %p.text-center
+            Coming July 2015.
+              
+        .col-sm-4.text-center
+          %a{href: "mailto:ben@catmospherecafe.com"}
+            = image_tag('yours.jpg', class: 'img-responsive')
+          %br
+          %h4.text-center Your hometown
+          %p
+            Yes, your hometown needs a space cat café. Contact us for further instructions.

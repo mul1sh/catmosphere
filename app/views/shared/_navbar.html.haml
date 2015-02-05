@@ -3,17 +3,18 @@
     .navbar-header.page-scroll
       %button.navbar-toggle{"data-target" => ".navbar-main-collapse", "data-toggle" => "collapse", type: "button"}
         %i.fa.fa-bars
-      %span.light
-        %a.navbar-brand{href: "/#"}
+      %a.navbar-brand{href: "/#"}
+        -#%i.fa.fa-play-circle
+        %span.light
           Catmosphere Café
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse.navbar-right.navbar-main-collapse
       %ul.nav.navbar-nav
         / Hidden li included to remove active class from about link when scrolled up past about section
-        %li.hidden
+        %li.hidden.page-scroll
           %a{href: "#page-top"}
-        %li.page-scroll
-          %a{href: "#introduction"} About
+        %li
+          %a{href: "/introduction"} About
         %li.dropdown
           %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
             Chiang Mai
@@ -28,5 +29,5 @@
                 Contact
         %li
           %a{href: "/sydney"} Sydney
-        %li.page-scroll
-          %a{href: "#shop"} Shop
+        %li
+          %a{href: "/#shop"} Shop

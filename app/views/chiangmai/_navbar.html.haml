@@ -6,27 +6,30 @@
       %span.light
         %a.navbar-brand{href: "/#"}
           Catmosphere Café
+        %a.navbar-brand{href: "/chiangmai"}
+          %i.fa.fa-caret-right
+          Chiang Mai
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse.navbar-right.navbar-main-collapse
       %ul.nav.navbar-nav
         / Hidden li included to remove active class from about link when scrolled up past about section
-        %li.hidden
+        %li.hidden.page-scroll
           %a{href: "#page-top"}
         %li.page-scroll
-          %a{href: "#introduction"} About
+          %a{href: "/#introduction"} About
         %li.dropdown
           %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
             Chiang Mai
             %b.caret
           %ul.dropdown-menu{"role" => "menu"}
-            %li
-              %a{:href => "/chiangmai#team"} 
+            %li.page-scroll
+              %a{:href => "#team"} 
                 Cat Crew
-              %a{:href => "/chiangmai#coffee"} 
+              %a{:href => "#coffee"} 
                 Menu
-              %a{:href => "/chiangmai#location"} 
+              %a{:href => "#location"} 
                 Contact
         %li
           %a{href: "/sydney"} Sydney
         %li.page-scroll
-          %a{href: "#shop"} Shop
+          %a{href: "/#shop"} Shop

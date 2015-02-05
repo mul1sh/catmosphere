@@ -3,8 +3,33 @@
     .navbar-header.page-scroll
       %button.navbar-toggle{"data-target" => ".navbar-main-collapse", "data-toggle" => "collapse", type: "button"}
         %i.fa.fa-bars
-      %a.navbar-brand{href: "#page-top"}
-        -#%i.fa.fa-play-circle
-        %span.light 
-          Catmosphere Café Sydney
-        .fb-like{ :"data-href" => "https://www.facebook.com/pages/Catmosphere-Sydney-Space-Cat-Cafe/1565145703732998", :"data-layout" => "button_count", :"data-action" => "like", :"data-colorscheme" => "dark", :"data-show-faces" => "true", :"data-share" => "true"}
+      %span.light
+        %a.navbar-brand{href: "/#"}
+          Catmosphere Café
+        %a.navbar-brand{href: "/sydney"}
+          %i.fa.fa-caret-right
+          Sydney
+    / Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+      %ul.nav.navbar-nav
+        / Hidden li included to remove active class from about link when scrolled up past about section
+        %li.hidden.page-scroll
+          %a{href: "#page-top"}
+        %li.page-scroll
+          %a{href: "/#introduction"} About
+        %li.dropdown
+          %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
+            Chiang Mai
+            %b.caret
+          %ul.dropdown-menu{"role" => "menu"}
+            %li
+              %a{:href => "/chiangmai#team"} 
+                Cat Crew
+              %a{:href => "/chiangmai#coffee"} 
+                Menu
+              %a{:href => "/chiangmai#location"} 
+                Contact
+        %li
+          %a{href: "/sydney"} Sydney
+        %li.page-scroll
+          %a{href: "/#shop"} Shop
