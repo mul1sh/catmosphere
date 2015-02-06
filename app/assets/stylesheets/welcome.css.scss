@@ -268,10 +268,17 @@ ol.actions li {
 }
 
 
+.navbar-nav a{
+  color: #AAA;
+}
+
+.dropdown-menu {
+  color: #555;
+}
+
 .dropdown-menu > li.active:hover {
   background-color: #333;
 }
-
 
 .dropdown-menu > .active > a {
   background-color: #333;
