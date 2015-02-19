@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#root'
 
   get '/sydney', to: 'sydney#root'
+  post '/sydney/subscribe', to: 'sydney#subscribe'
   get '/chiangmai', to: 'chiangmai#root'
 
   # The priority is based upon order of creation: first created -> highest priority.
