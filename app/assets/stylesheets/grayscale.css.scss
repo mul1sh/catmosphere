@@ -138,10 +138,22 @@ a:focus {
     -o-background-size: cover;
 }
 
+
+
+
 .hero-body {
     display: table-cell;
     vertical-align: middle;
 }
+
+.hero-cinema {
+    height: 600px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #000;
+    background-image: asset-url('purrwalker.jpg');
+}
+
 
 .brand-heading {
     font-size: 40px;
