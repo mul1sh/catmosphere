@@ -148,6 +148,11 @@ a:focus {
 
 .hero-cinema {
     height: 600px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     display: table-cell;
     vertical-align: middle;
     background-color: #000;
