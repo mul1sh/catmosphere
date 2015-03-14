@@ -5,16 +5,56 @@
         .col-lg-8.col-lg-offset-2
           %h2.text-center Cat Cinema
       .row
-        .col-lg-4.col-lg-offset-2
-          =image_tag('catcinema-1.jpg', class: 'img-responsive')
-        .col-lg-4
-          =image_tag('catcinema-2.jpg', class: 'img-responsive')
-      .row
         .col-lg-8.col-lg-offset-2
+          %p.text-center
+            Guests can book our cat cinema and event room to enjoy exclusive time with the cats. Possible uses include: Watch-a-movie-with-cats (bring your own DVD, Bluray or USB drive), birthday parties, serious business meetings, or simply chilling with friends in good feline company. Available starting April 1st, 2015!
+      .row
+        .col-sm-4.col-sm-offset-2.centeredr
+          =image_tag('catcinema-1.jpg', class: 'img-responsive')
           %br
+        .col-sm-4.centered
+          =image_tag('catcinema-2.jpg', class: 'img-responsive')
+          %br
+
+      .row
+        .col-sm-8.col-sm-offset-2.centered
+          %table.table.table-striped
+            %thead
+              %tr
+                %th.text-center Package
+                %th.text-center Includes
+                %th.text-center Pricing
+            %tbody
+              %tr
+                %td
+                  %b Rent the cat cinema and event room
+                %td.text-left
+                  %ul
+                    %li Room for up to 12 persons
+                    %li DLP projector w/ 100" screen
+                    %li 5.1 surround sound
+                    %li Cats, cats, cats!
+                %td From 150 Baht / hour*
+              %tr
+                %td
+                  %b "At the Movies with Cats" Promotion pack
+                %td.text-left
+                  %ul
+                    %li Cinema room for 2 hours
+                    %li DLP projector w/ 100" screen
+                    %li 5.1 surround sound
+                    %li Popcorn
+                    %li Soft Drinks
+                    %li More cats!
+                %td
+                  250 Baht (1 person)
+                  %br
+                  + 100 Baht for each extra guest
           %p.text-center
-            Guests can book our cat cinema and event room and enjoy exclusive time with the cats. Possible uses include: Watch-a-movie-with-cats (bring your own DVD, Bluray or USB drive), birthday parties, serious business meetings, or simply chilling with friends in good feline company.
-          %p.text-center
-            %a{ :href => "https://www.indiegogo.com/projects/catmosphere-sydney-space-cat-cafe/x/9804136"}
+            %a{ :href => "http://catmosphere.schedulething.com", target: '_blank'}
               %button.btn.btn-success Book now!
-          %p.small.text-center For questions and booking, you can also call us at 092-273-1011.
+          %p.small.text-center 
+            * Price depends on size of group. Outside food and drinks are not allowed. Customers must bring their own movies on DVD, Bluray, or USB drive.
+
+
+            For questions and bookings via phone, you can call us at 092-273-1011.

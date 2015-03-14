@@ -5,7 +5,7 @@
     - team.each do |group, members|
       - members.each do |member|
         .row.table-padded
-          .col-sm-4.col-sm-offset-1
+          .col-sm-4.col-sm-offset-1.centered
             = image_tag('team/' + member[:image], class: 'img-responsive')
             %br
           .col-sm-6
