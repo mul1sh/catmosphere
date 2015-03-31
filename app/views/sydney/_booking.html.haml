@@ -1,0 +1,49 @@
+%section#booking
+  .container.content-section
+    .row
+      .col-lg-8.col-lg-offset-2
+        %h2.text-center Available Packages
+    .row
+      .col-lg-8.col-lg-offset-2
+        %p.text-center
+          Bookings are flying off our virtual shelves faster than the Enterprise engaging warp speed, so book an advance ticket today to earn first preference for a session with the cats.
+    .row
+      .col-sm-8.col-sm-offset-2.centered
+        %table.table
+          %thead
+            %tr
+              %th.text-center Package
+              %th.text-center Includes
+              %th.text-center Pricing
+          %tbody
+            %tr
+              %td
+                %b Coffee & Cookies with the Cat-stronauts
+              %td.text-left
+                %ul
+                  %li 60 minutes with the cats
+                  %li Cat-shaped cookie
+                  %li Quality coffee from some of Sydney’s best baristas
+              %td $20
+            %tr
+              %td
+                %b Opening Night VIP Ticket
+              %td.text-left
+                %ul
+                  %li Mingle with special guests and our feline residents
+                  %li Enjoy Sydney’s finest catering 
+                  %li Smile and pose for the paparazzi 
+              %td
+                $100
+            %tr
+              %td
+                %b Party with the catstronauts
+              %td.text-left
+                %ul
+                  %li Tailor your own unique party package
+                  %li Enjoy an exclusive meet and greet with our resident cat-stronauts alongside 9 of your closest friends
+              %td
+                $200
+        %p.text-center
+          %a{ :href => "http://catmosphere.schedulething.com", target: '_blank'}
+            %button.btn.btn-success Book your Ticket

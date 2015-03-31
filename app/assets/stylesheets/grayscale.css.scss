@@ -139,12 +139,22 @@ a:focus {
 }
 
 
-
-
-.hero-body {
-    display: table-cell;
-    vertical-align: middle;
+#hero-sydney {
+    display: table;
+    padding: 100px 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: asset-url('Kitten_Catpaccino.jpg');
 }
+
+
 
 .hero-cinema {
     height: 600px;
@@ -159,6 +169,17 @@ a:focus {
     background-image: asset-url('purrwalker.jpg');
 }
 
+
+.hero-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 .brand-heading {
     font-size: 40px;
