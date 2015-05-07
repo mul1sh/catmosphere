@@ -25,7 +25,7 @@ module ApplicationHelper
               Luna is the lone survivor of an ancient alien race. She has the skill of enchanting the hearts of fellow cats using her magical stare and is usually found cuddled up with a cat friend. 
               <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               </small>
@@ -53,7 +53,7 @@ module ApplicationHelper
               As the most experienced combatant Apollo is highly respected by the team. He is a fair leader, but will crack down swiftly on anyone who dares to challenge his power.
               <small>
               Cuddly: <i class="fa fa-star"></i>
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               Wild: <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>
@@ -67,7 +67,7 @@ module ApplicationHelper
               A talended pilot, Buzz can keep his calm in even the most daunting situations. His cool demeanor gives him an advantage in space combat but also makes him seem "cold" in relationships.
               <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i>
               Wild: <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>              
@@ -82,8 +82,8 @@ module ApplicationHelper
               <small>
               Cuddly: <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> 
-              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>
               HTML
           },
@@ -136,8 +136,8 @@ module ApplicationHelper
             cv: <<-HTML
               A merciless headhunter from an unknown galaxy. Many have been fooled by harmless appearance - a bitter mistake that yields harsh consequences.
               <small>
-              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>
@@ -158,20 +158,6 @@ module ApplicationHelper
               HTML
           },
           {
-            name: "Buttercup",
-            title: "Spy | Persian",
-            image: "09-buttercup.jpg",
-            cv: <<-HTML
-              A masterful spy, Buttercup has deserted to Catmosphere from an enemy space ship. He is in a permanent undercover mission but we cannot go into details on our website.
-              <small>
-              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Wild: <i class="fa fa-star"></i> 
-              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-              </small>
-              HTML
-          },
-          {
             name: "Anakin",
             title: "Padawan | American Shorthair",
             image: "12-anakin.jpg",
@@ -180,7 +166,7 @@ module ApplicationHelper
               <small>
               Cuddly: <i class="fa fa-star"></i>
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>
               HTML
@@ -192,10 +178,10 @@ module ApplicationHelper
             cv: <<-HTML
               Jean Luc is a graduate from the renowned "espace académie de chats" in Paris. He is a reliable fighter pilot who has been known to call out some other team members for acting irresponsibly. Has a love-hate relationship with Eve.
               <small>
-              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
               </small>
               HTML
           },
@@ -220,7 +206,7 @@ module ApplicationHelper
             cv: <<-HTML
               Leeloo arrived from the future in a time machine and has been stuck in the present ever since. Luckily she made friends with the crew at Catmosphere.
               <small>
-              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> 
               Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
@@ -234,10 +220,37 @@ module ApplicationHelper
             cv: <<-HTML
               A gifted theoretical physicist and mathematician who is working on a "theory of everyhting". Her goal is to unify quantum mechanics with general relativity.
               <small>
+              Cuddly: <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              </small>
+              HTML
+          },
+          {
+            name: "Zoey",
+            title: "Pilot | Maine Coon / Persian",
+            image: "18-zoey.jpg",
+            cv: <<-HTML
+              A gifted theoretical physicist and mathematician who is working on a "theory of everyhting". Her goal is to unify quantum mechanics with general relativity.
+              <small>
               Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Wild: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i>
+              </small>
+              HTML
+          },
+          {
+            name: "Cooper",
+            title: "Catstronaut / Persian",
+            image: "19-cooper.jpg",
+            cv: <<-HTML
+              Cooper has travelled traversed space and time through a wormhole. He has the power of influencing gravity with his pure will.
+              Cuddly: <i class="fa fa-star"></i> 
               Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> 
               Wild: <i class="fa fa-star"></i> 
-              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i>
               </small>
               HTML
           },
