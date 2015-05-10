@@ -2,13 +2,12 @@
   .white-background
     .container.content-section
       .row
-        .col-lg-8.col-lg-offset-2
-          %a{href: "/catcinema", target: "_blank"}
-            %h2.text-center Cat Cinema and Event Booking
+        .col-lg-8.col-lg-offset-2.text-center
+          = image_tag('catcinema-program.jpg', class: 'img-responsive', width: "800")
       .row
         .col-lg-8.col-lg-offset-2
           %p.text-center
-            For guests who wish to escape the queues and enjoy a more relaxed time with some of our cats, we now offer access to our VIP room and cat cinema in the second floor. Enjoy our collection of board games or even your favorite movie on our 100" screen!
+            Book our cat cinema to enjoy a movie classic with cats or organize your "bring-your-own-movie" event.
 
       // .row
       //   .col-sm-4.col-sm-offset-2.centeredr
@@ -26,7 +25,6 @@
                 %th.text-center Package
                 %th.text-center Description
                 %th.text-center Date and time
-                %th.text-center Pre-booking 
             %tbody
 
               %tr
@@ -40,8 +38,6 @@
                     Pricing: THB 200 / person
                 %td
                   Every Wednesday, 6pm - 8pm.
-                %td
-                  %a{href: "https://catmosphere.schedulething.com", target: "_blank"} Yes
               %tr
                 %td
                   %b Bring-Your-Own-Movie-Pack
@@ -53,21 +49,6 @@
                     Pricing: THB 200 / person
                 %td
                   Up to you!
-                %td
-                  %a{href: "https://catmosphere.schedulething.com", target: "_blank"} Yes
-              %tr
-                %td
-                  %b VIP room access (no projector)
-                %td.text-left
-                  %ul
-                    Access to VIP room and our collection of board games. Possible uses include: Gaming afternoons, birthday parties, serious business meetings, or simply chilling with friends in good feline company.
-                    %br
-                    %br
-                    Pricing: THB 150 / person for the first hour (includes 1 drink) plus THB 50 / person for subsequent hours
-                %td
-                  Up to you!
-                %td
-                  No - available at our shop.
 
           %p.text-center
             %a{ :href => "/chiangmai/booking", target: '_blank'}
