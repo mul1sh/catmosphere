@@ -24,9 +24,29 @@
             %li
               %a{:href => "/chiangmai#team"} 
                 Crew
+            %li
               %a{:href => "/chiangmai#cinema"}
                 Cat Cinema
+            %li
               %a{:href => "/chiangmai#location"} 
                 Location
-        %li
-          %a{href: "/sydney"} Sydney
+        %li.dropdown
+          %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
+            Sydney
+            %b.caret
+          %ul.dropdown-menu{"role" => "menu"}
+            %li
+              %a{:href => "/sydney#hero-sydney"} 
+                Home
+            %li
+              %a{:href => "https://bookeo.com/catmosphere", target: '_blank'}
+                Booking
+            %li
+              %a{:href => "/sydney#faq"} 
+                FAQ
+            %li
+              %a{:href => "/sydney#mailing"} 
+                Newsletter
+            %li
+              %a{:href => "/sydney#location"} 
+                Location
