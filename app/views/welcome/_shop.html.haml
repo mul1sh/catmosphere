@@ -4,14 +4,62 @@
   .container.content-section
     .row.text-center
       .col-sm-8.col-sm-offset-2
-        %h2 Delicious Space Cat Articles
+        %h2 Get the comic book
         %p
-          Order t-shirts and other fan articles featuring original Space Cat Art at our web shop!
+          The Adventures of Young Purrwalker is an epic space cat saga taking place not long ago in a nearby galaxy. Issue #001 is now available as a
+          %a{href: "/purrwalker_free_download", style: "text-decoration: underline;"} free PDF.
     .row.text-center
-      =image_tag('t-shirts.jpg', class: 'img-responsive center-block')
+      =image_tag('purr.jpg', class: 'img-responsive center-block')
       %br
+
     .row.text-center
       .col-sm-8.col-sm-offset-2
         %p
-          =link_to "Go To Shop", "http://www.redbubble.com/people/theduckymafia/shop", class: "btn btn-success"
+          %br
+          =link_to "Download now!", "/purrwalker_free_download", class: "btn btn-success"
         %br
+      .col-sm-8.col-sm-offset-2
+        %p You love the Purrwalkers and want to see the story continue? Order high-res digital and printed versions of issue #001 and #002!
+        %table.table.table-striped
+          %thead
+            %tr
+              %th.text-center Issue
+              %th.text-center Price
+              %th.text-center Where to get
+          %tbody.white-background
+            %tr
+              %td
+                \#001: Cat Squad Alpha (online)
+              %td
+                $0.99
+              %td 
+                // %a{href: "/redirect_comic", style: "color: #3598a2; text-decoration: underline;"} 
+                Comixology (coming soon)
+            %tr
+              %td
+                \#001: Cat Squad Alpha (high-res download)
+              %td
+                $1
+              %td 
+                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo                 
+            %tr
+              %td
+                \#001: Cat Squad Alpha (printed)
+              %td
+                $5
+              %td
+                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo
+            %tr
+              %td
+                \#002: A Cat to Behold (pre-order, digital) 
+              %td
+                $1
+              %td
+                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo
+            %tr
+              %td
+                \#002: A Cat to Behold  (pre-order, printed) 
+              %td
+                $5
+              %td
+                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo

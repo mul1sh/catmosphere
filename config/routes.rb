@@ -2,11 +2,16 @@ Rails.application.routes.draw do
 
   root 'welcome#root'
 
+  get '/redirect_comic',  to: 'welcome#redirect_comic'
+  get '/redirect_indiegogo',  to: 'welcome#redirect_indiegogo'
+  get '/purrwalker_free_download',  to: 'welcome#redirect_purrwalker'
+  get '/getpdf',  to: 'welcome#getpdf'
   get '/sydney', to: 'sydney#root'
-  post '/sydney/subscribe', to: 'sydney#subscribe'
+  post'/sydney/subscribe', to: 'sydney#subscribe'
   get '/chiangmai', to: 'chiangmai#root'
   get '/catcinema',  to: redirect('/chiangmai#cinema')
   get '/chiangmai/booking',  to: 'chiangmai#booking'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
