@@ -116,20 +116,6 @@ module ApplicationHelper
               HTML
           },
           {
-            name: "Darth",
-            title: "Sith Lord | Exotic Shorthair",
-            image: "11-darth.jpg",
-            cv: <<-HTML
-              Words alone cannot describe his evil powers. Don't be deceived by his handsome face and cuddliness - Darth has long been lost to the Dark Side.
-              <small>
-              Cuddly: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Playful: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              Wild: <i class="fa fa-star"></i> 
-              Sleepy: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
-              </small>
-              HTML
-          },
-          {
             name: "Boba",
             title: "Headhunter | Siamese / Persian",
             image: "07-boba.jpg",
