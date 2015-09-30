@@ -6,8 +6,7 @@
       .col-sm-8.col-sm-offset-2
         %h2 Get the comic book
         %p
-          The Adventures of Young Purrwalker is an epic space cat saga taking place not long ago in a nearby galaxy. Issue #001 is now available as a
-          %a{href: "/purrwalker_free_download", style: "text-decoration: underline;"} free PDF.
+          The Adventures of Young Purrwalker is an epic space cat saga taking place not long ago in a nearby galaxy. Issue #001 is now available for free!
     .row.text-center
       =image_tag('purr.jpg', class: 'img-responsive center-block')
       %br
@@ -16,50 +15,51 @@
       .col-sm-8.col-sm-offset-2
         %p
           %br
-          =link_to "Download now!", "/purrwalker_free_download", class: "btn btn-success"
-        %br
+          =link_to "Download now!", "/downloads/purrwalker-001.pdf", class: "btn btn-success"
+    .row.text-center      
       .col-sm-8.col-sm-offset-2
-        %p You love the Purrwalkers and want to see the story continue? Order high-res digital and printed versions of issue #001 and #002!
+        %p ... or choose your preferred format below  (right click and "save as..." to download):
         %table.table.table-striped
           %thead
             %tr
-              %th.text-center Issue
-              %th.text-center Price
-              %th.text-center Where to get
+              %th.text-center Download
+              %th.text-center Format
+              %th.text-center Size
           %tbody.white-background
             %tr
               %td
-                \#001: Cat Squad Alpha (online)
+                %a{href: "/downloads/purrwalker-001.pdf", style: "color: #3598a2; text-decoration: underline;"}
+                  \#001: Cat Squad Alpha
               %td
-                $0.99
+                PDF
               %td 
                 // %a{href: "/redirect_comic", style: "color: #3598a2; text-decoration: underline;"} 
-                Comixology (coming soon)
+                17.2 MB
             %tr
               %td
-                \#001: Cat Squad Alpha (high-res download)
+                %a{href: "/downloads/purrwalker-001.cbz", style: "color: #3598a2; text-decoration: underline;"}
+                  \#001: Cat Squad Alpha
               %td
-                $1
+                CBZ
               %td 
-                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo                 
+                // %a{href: "/redirect_comic", style: "color: #3598a2; text-decoration: underline;"} 
+                14.4 MB
             %tr
               %td
-                \#001: Cat Squad Alpha (printed)
+                \#002: A Cat to Behold
               %td
-                $5
+                N/A
               %td
-                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo
-            %tr
-              %td
-                \#002: A Cat to Behold (pre-order, digital) 
-              %td
-                $1
-              %td
-                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo
-            %tr
-              %td
-                \#002: A Cat to Behold  (pre-order, printed) 
-              %td
-                $5
-              %td
-                %a{href: "/redirect_indiegogo", style: "color: #3598a2; text-decoration: underline;"} Indiegogo
+                N/A
+        %br
+    .row.text-center
+      .col-sm-8.col-sm-offset-2
+        %h2
+          Want to have issue #002?
+        %p
+          We’ll continue producing the comic if we get enough requests from our readers. Make sure to
+          %a{href: "mailto:ben@catmospherecafe.com", style: "color: #3598a2; text-decoration: underline;"}
+            drop us an email
+          if you want to see an issue #002!
+
+
