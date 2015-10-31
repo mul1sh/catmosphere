@@ -9,9 +9,6 @@
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse.navbar-right.navbar-main-collapse
       %ul.nav.navbar-nav
-        / Hidden li included to remove active class from about link when scrolled up past about section
-        %li.hidden
-          %a{href: "#page-top"}
         %li
           %a{href: "/#introduction"} About
         %li
@@ -21,6 +18,12 @@
             Chiang Mai
             %b.caret
           %ul.dropdown-menu{"role" => "menu"}
+            %li
+              %a{:href => "/chiangmai#hero-chiangmai"} 
+                Home
+            %li
+              %a{:href => "/chiangmai#faq"} 
+                FAQ
             %li
               %a{:href => "/chiangmai#team"} 
                 Crew

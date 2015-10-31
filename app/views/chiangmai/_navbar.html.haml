@@ -11,8 +11,6 @@
       %ul.nav.navbar-nav
         / Hidden li included to remove active class from about link when scrolled up past about section
         %li
-          %a{href: "#page-top"}
-        %li
           %a{href: "/#introduction"} About
         %li
           %a{href: "/#shop"} Comic Book
@@ -21,6 +19,12 @@
             Chiang Mai
             %b.caret
           %ul.dropdown-menu{"role" => "menu"}
+            %li.page-scroll
+              %a{:href => "#hero-chiangmai"} 
+                Home
+            %li.page-scroll
+              %a{:href => "#faq"} 
+                FAQ
             %li.page-scroll
               %a{:href => "#team"} 
                 Crew
