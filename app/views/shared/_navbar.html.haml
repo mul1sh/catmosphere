@@ -4,36 +4,26 @@
       %button.navbar-toggle{"data-target" => ".navbar-main-collapse", "data-toggle" => "collapse", type: "button"}
         %i.fa.fa-bars
       %span.light
-        %a.navbar-brand{href: "/"}
-          Catmosphere Café
+        - if current_page?(root_path)
+          %a.navbar-brand{href: "#page-top"}
+            Catmosphere Café
+        - else
+          %a.navbar-brand{href: "/"}
+            Catmosphere Café
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse.navbar-right.navbar-main-collapse
       %ul.nav.navbar-nav
         / Hidden li included to remove active class from about link when scrolled up past about section
-        %li
-          %a{href: "/#introduction"} About
-        %li
-          %a{href: "/#shop"} Comic Book
-        %li.dropdown
-          %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#", style: "color: #FFF;"}
-            Chiang Mai
-            %b.caret
-          %ul.dropdown-menu{"role" => "menu"}
-            %li.page-scroll
-              %a{:href => "#hero-chiangmai"} 
-                Home
-            %li.page-scroll
-              %a{:href => "#faq"} 
-                FAQ
-            %li.page-scroll
-              %a{:href => "#team"} 
-                Crew
-            %li.page-scroll
-              %a{:href => "#cinema"}
-                Cat Cinema
-            %li.page-scroll
-              %a{:href => "#location"} 
-                Location
+        - if current_page?(root_path)
+          %li.hidden
+            %a{href: "#page-top"}
+          %li.page-scroll
+            %a{href: "#introduction", style: "color: #FFF;"} Home
+        -else
+          %li.hidden
+            %a{href: "/"}
+          %li.page-scroll
+            %a{href: "/#introduction", style: "color: #FFF;"} Home         
         %li.dropdown
           %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
             Sydney
@@ -41,7 +31,7 @@
           %ul.dropdown-menu{"role" => "menu"}
             %li
               %a{:href => "/sydney#hero-sydney"} 
-                Home
+                About
             %li
               %a{:href => "https://bookeo.com/catmosphere", target: '_blank'}
                 Booking
@@ -56,4 +46,24 @@
                 Newsletter
             %li
               %a{:href => "/sydney#location"} 
+                Location
+        %li.dropdown
+          %a.dropdown-toggle{:href => "#", "role" => "button", "data-toggle" => "dropdown", "data-target" => "#"}
+            Chiang Mai
+            %b.caret
+          %ul.dropdown-menu{"role" => "menu"}
+            %li
+              %a{:href => "/chiangmai#hero-chiangmai"} 
+                About
+            %li
+              %a{:href => "/chiangmai#faq"} 
+                FAQ
+            %li
+              %a{:href => "/chiangmai#team"} 
+                Crew
+            %li
+              %a{:href => "/chiangmai#cinema"}
+                Cat Cinema
+            %li
+              %a{:href => "/chiangmai#location"} 
                 Location
