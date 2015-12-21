@@ -5,21 +5,22 @@
         .col-lg-8.col-lg-offset-2
           %h4.text-center Chiang Mai Cat Café and Cinema
           %p.text-center
-            In Chiang Mai we don't separate between dining- and cats areas - you simply pop in and wait for the cats to stroll by. You can also book our cat cinema room for an exclusive movie session with out cats.
-        %br
-      .row
-        .col-sm-4.text-center
-          = image_tag('cooper.jpg', class: 'img-responsive')
-          %br
-          %h4.text-center Cat Café
-          %p.text-center
-            Visit any time between 10:00am and 8:00pm. Check out the
+            At Catmosphere Chiang Mai you simply pop in, make your order and wait for the cats to stroll by. The café is open daily from 10:00am to 8:00pm. We recommend coming in the morning or evening when the cats are most active! Check the
             %a{ :href => "#faq" } FAQ 
             and 
             %a{ :href => "#location" } location
-            sections to find out how to get there.
-            // %a{ :href => "https://bookeo.com/catmosphere"}
-            // %button.btn.btn-success Book now!
+            sections for directions.
+        %br
+      .row
+        .col-sm-4.text-center
+          %a{href: "http://shop.catmospherecafe.com/products/gift-voucher-catmosphere-cafe-chiang-mai", target: "_blank" }
+            = image_tag('cooper.jpg', class: 'img-responsive')
+            %br
+            %h4.text-center Gift Voucher
+          %p.text-center
+            Save up to 20% by getting a gift voucher before you visit.
+          %a{:href => "http://shop.catmospherecafe.com/products/gift-voucher-catmosphere-cafe-chiang-mai", :target => "_blank"}
+            %button.btn.btn-success VIEW OPTIONS
         .col-sm-4.text-center
           %a{href: "#cinema"}
             = image_tag('catcinema-1.jpg', class: 'img-responsive')
@@ -29,14 +30,17 @@
             Make an 
             %a{href: "/chiangmai#cinema"} online reservation
             to get your exclusive 2 hour slot.
-          %br
+            %br
+            %br
+            %a{:href => "/chiangmai#cinema", :target => "_blank"}
+              %button.btn.btn-success VIEW PACKAGES
         .col-sm-4.text-center
-          // %a{href: "/downloads/Catmosphere-Franchisee-v1.0.pdf"}
-          = image_tag('yours.jpg', class: 'img-responsive')
-          %br
-          %h4.text-center Space Cat Tees
+          %a{href: "http://shop.catmospherecafe.com/", target: "_blank" }
+            = image_tag('yours.jpg', class: 'img-responsive')
+            %br
+            %h4.text-center Space Cat Tees
           %p.text-center
-            Awesome t-shirts and other space cat articles are available in the café and web shop.
+            Get awesome t-shirts and other space cat articles.
             %br
             %br
             %a{:href => "http://shop.catmospherecafe.com/", :target => "_blank"}
