@@ -2,7 +2,25 @@
   .white-background
     .container.content-section
       .row
-        .col-lg-8.col-lg-offset-2
+        .col-lg-8.col-lg-offset-2.text-center.bg-danger
+          %h1 Special announcement
+          %p.alert
+            Dear visitors! As it happens, many of our cats have come down with a cold of the last few days. We have our hands full with treating the patients, and operations at Catmosphere will be limited until everyone is healhty again:
+            %br
+            %br
+            %b * We close at 6pm instead of 8pm
+            %br
+            * Cat cinema is closed until further notice;
+            %br
+            %b * Expect to see less cats at the café.
+            %br
+            %br
+            Thank you for your understanding, and follow us on 
+            %a{href: "http://www.facebook.com/catmospherecafe"} Facebook
+            for updates.
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+        %br
           %h4.text-center Chiang Mai Cat Café and Cinema
           %p.text-center
             At Catmosphere Chiang Mai you simply pop in, make your order and wait for the cats to stroll by. The café is open daily from 10:00am to 8:00pm. We recommend coming in the morning or evening when the cats are most active! Check the
@@ -11,6 +29,7 @@
             %a{ :href => "#location" } location
             sections for directions.
         %br
+
       .row
         .col-sm-4.text-center
           %a{href: "http://shop.catmospherecafe.com/products/gift-voucher-catmosphere-cafe-chiang-mai", target: "_blank" }
