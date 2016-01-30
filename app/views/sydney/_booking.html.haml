@@ -39,7 +39,34 @@
             :plain
                 <a href="http://bookeo.com/go/233LXWHLP14C4EC0D17C/buyvoucher" style="margin:0;padding:0;" target="_top"><img src="https://www.bookeo.com/buttons/book_buyvoucher_en.png" alt="book now" border="0" style="margin:0;padding:0"></a>
       .row
-        .col-sm-2.text-center
+        .col-sm-4.text-center
+          %a{href: "http://bookeo.com/catmosphere?type=2333EXCAN150D4E01171", target: "_blank"}
+            = image_tag('catyoga.jpg', class: 'img-responsive')
+            %br
+            %h4.text-center Sponsor-a-Cat
+          %p.text-center
+            $30 a month buys food, litter, and vet care for 1 x rescue cat, for 1 year.
+            Inclusions: 1 x free visit a fortnight to play and meow to your sponsored space cat, plus regular email updates from your cat on how they are going, and how your sponsorship is brightening their busy catty days.
+            %br
+            :plain
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="D6HUKX8SGHMYW">
+              <input type="hidden" name="on0" value="Sponsorship Options">
+              <table align="center"><tr>
+              <td>Sponsorship Options</td>
+              </tr><tr><td>
+              <select name="os0">
+              <option value="1 Year ($360)">1 Year ($360) : $360.00 AUD - yearly</option>
+              <option value="2 Years ($720)">2 Years ($720) : $30.00 AUD - monthly</option>
+              <option value="6 Months">6 Months : $30.00 AUD - monthly</option>
+              </select>
+              <input type="hidden" name="currency_code" value="AUD">
+              </td></tr><tr><td>
+              <input type="image" src="https://www.paypalobjects.com/…/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+              </td></tr></table>
+              </form>
         .col-sm-4.text-center
           %a{href: "http://bookeo.com/catmosphere?type=2333EXCAN150D4E01171", target: "_blank"}
             = image_tag('catyoga.jpg', class: 'img-responsive')
