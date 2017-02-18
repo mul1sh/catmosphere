@@ -48,21 +48,16 @@
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick">
               <input type="hidden" name="hosted_button_id" value="D6HUKX8SGHMYW">
-              <input type="hidden" name="on0" value="Sponsorship Options">
-              <table align="center"><tr>
-              <td>Sponsorship Options</td>
-              </tr><tr><td style="padding: 5px">
-              <select name="os0">
-              <option value="1 Year ($360)">1 Year ($360) : $360.00 AUD - yearly</option>
-              <option value="2 Years ($720)">2 Years ($720) : $30.00 AUD - monthly</option>
-              <option value="6 Months">6 Months : $30.00 AUD - monthly</option>
-              </select>
+              <table>
+              <tr><td><input type="hidden" name="on0" value="Sponsorship Options">Sponsorship Options</td></tr><tr><td><select name="os0">
+                <option value="Monthly">Monthly : $30.00 AUD - monthly</option>
+                <option value="Yearly">Yearly : $360.00 AUD - yearly</option>
+              </select> </td></tr>
+              </table>
               <input type="hidden" name="currency_code" value="AUD">
-              </td></tr><tr><td style="padding: 5px">
-              <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+              <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
               <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-              </td></tr></table>
-              </form>
+              </form>    
         .col-sm-3.text-center
           %a{href: "http://bookeo.com/catmosphere?type=233PAWFNL154FF48038E", target: "_blank"}
             = image_tag('catyoga.jpg', class: 'img-responsive')
