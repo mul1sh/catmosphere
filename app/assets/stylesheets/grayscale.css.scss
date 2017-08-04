@@ -171,6 +171,20 @@ a:focus {
     background-image: asset-url('hero-chiangmai.jpg');
 }
 
+#webshop-banner {
+    padding-top: 320px;
+    height: 460px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: asset-url('webshop-banner.jpg');
+}
+
 .hero-body {
     display: table-cell;
     vertical-align: middle;
