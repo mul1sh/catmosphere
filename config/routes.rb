@@ -6,10 +6,8 @@ Rails.application.routes.draw do
   get '/redirect_indiegogo',  to: 'welcome#redirect_indiegogo'
   get '/purrwalker_free_download',  to: 'welcome#redirect_purrwalker'
   get '/getpdf',  to: 'welcome#getpdf'
-  get '/sydney', to: 'sydney#root'
-  post'/sydney/subscribe', to: 'sydney#subscribe'
+  get '/sydney', to: redirect('https://www.catmospherecafe.com.au')
   get '/chiangmai', to: 'chiangmai#root'
-  get '/catcinema',  to: redirect('/chiangmai#cinema')
   get '/chiangmai/booking',  to: 'chiangmai#booking'
 
 
