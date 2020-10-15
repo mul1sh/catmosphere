@@ -1,4 +1,4 @@
-chinkoproject.com
-=================
+Camtosphere Cafe Website
+========================
 
-The chinkoproject root page
+Root page of Catomsphere Café
